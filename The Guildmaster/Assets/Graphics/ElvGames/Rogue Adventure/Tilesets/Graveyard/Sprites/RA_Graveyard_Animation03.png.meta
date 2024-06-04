@@ -3,7 +3,7 @@ guid: c479fc50265a58549b0a0d933b9c09e6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,33 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2226,109 +2259,108 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RA_Graveyard_Animation03_46: -548987785
-      RA_Graveyard_Animation03_65: -263554159
-      RA_Graveyard_Animation03_14: 864743881
-      RA_Graveyard_Animation03_17: 1546810557
-      RA_Graveyard_Animation03_64: -1542006643
-      RA_Graveyard_Animation03_73: 1467689062
-      RA_Graveyard_Animation03_59: 1336289548
-      RA_Graveyard_Animation03_10: 1254504511
-      RA_Graveyard_Animation03_41: -772113758
-      RA_Graveyard_Animation03_12: -1623502309
-      RA_Graveyard_Animation03_49: -3305997
-      RA_Graveyard_Animation03_91: -761532226
-      RA_Graveyard_Animation03_8: -497572408
-      RA_Graveyard_Animation03_39: -1637509275
-      RA_Graveyard_Animation03_6: 290579081
-      RA_Graveyard_Animation03_5: 1583330071
-      RA_Graveyard_Animation03_4: 1810548051
-      RA_Graveyard_Animation03_68: 62419083
-      RA_Graveyard_Animation03_80: 58525194
-      RA_Graveyard_Animation03_9: 1287859980
-      RA_Graveyard_Animation03_66: 1237608460
-      RA_Graveyard_Animation03_25: -546112066
-      RA_Graveyard_Animation03_37: -1611560510
-      RA_Graveyard_Animation03_89: 353929561
-      RA_Graveyard_Animation03_74: 383885169
-      RA_Graveyard_Animation03_18: 1407885054
-      RA_Graveyard_Animation03_47: 1687588088
-      RA_Graveyard_Animation03_19: -1212472542
-      RA_Graveyard_Animation03_34: 517137807
-      RA_Graveyard_Animation03_93: -1389935270
       RA_Graveyard_Animation03_0: -1999845281
-      RA_Graveyard_Animation03_32: -831323038
-      RA_Graveyard_Animation03_24: -695247751
-      RA_Graveyard_Animation03_57: 1884293929
-      RA_Graveyard_Animation03_54: -1680047522
-      RA_Graveyard_Animation03_82: -621981876
-      RA_Graveyard_Animation03_83: -2103597415
+      RA_Graveyard_Animation03_1: -382758215
+      RA_Graveyard_Animation03_10: 1254504511
+      RA_Graveyard_Animation03_11: -1255304574
+      RA_Graveyard_Animation03_12: -1623502309
+      RA_Graveyard_Animation03_13: -1391741333
+      RA_Graveyard_Animation03_14: 864743881
+      RA_Graveyard_Animation03_15: -371617008
+      RA_Graveyard_Animation03_16: -1646928010
+      RA_Graveyard_Animation03_17: 1546810557
+      RA_Graveyard_Animation03_18: 1407885054
+      RA_Graveyard_Animation03_19: -1212472542
+      RA_Graveyard_Animation03_2: 1923479257
       RA_Graveyard_Animation03_20: -1869261278
-      RA_Graveyard_Animation03_87: 715707818
-      RA_Graveyard_Animation03_61: 324293318
+      RA_Graveyard_Animation03_21: -1460411609
+      RA_Graveyard_Animation03_22: -2013407453
+      RA_Graveyard_Animation03_23: 2115886065
+      RA_Graveyard_Animation03_24: -695247751
+      RA_Graveyard_Animation03_25: -546112066
+      RA_Graveyard_Animation03_26: 571266680
+      RA_Graveyard_Animation03_27: 203114678
+      RA_Graveyard_Animation03_28: 1709050513
+      RA_Graveyard_Animation03_29: -1545283353
+      RA_Graveyard_Animation03_3: -43030476
+      RA_Graveyard_Animation03_30: 2728491
+      RA_Graveyard_Animation03_31: 703586475
+      RA_Graveyard_Animation03_32: -831323038
+      RA_Graveyard_Animation03_33: 552935766
+      RA_Graveyard_Animation03_34: 517137807
+      RA_Graveyard_Animation03_35: -1167978855
+      RA_Graveyard_Animation03_36: -2133587913
+      RA_Graveyard_Animation03_37: -1611560510
+      RA_Graveyard_Animation03_38: -1988950977
+      RA_Graveyard_Animation03_39: -1637509275
+      RA_Graveyard_Animation03_4: 1810548051
+      RA_Graveyard_Animation03_40: 2070227445
+      RA_Graveyard_Animation03_41: -772113758
+      RA_Graveyard_Animation03_42: 580140116
+      RA_Graveyard_Animation03_43: -1515564614
+      RA_Graveyard_Animation03_44: 693749336
+      RA_Graveyard_Animation03_45: -1185533600
+      RA_Graveyard_Animation03_46: -548987785
+      RA_Graveyard_Animation03_47: 1687588088
+      RA_Graveyard_Animation03_48: 444464873
+      RA_Graveyard_Animation03_49: -3305997
+      RA_Graveyard_Animation03_5: 1583330071
+      RA_Graveyard_Animation03_50: 407062020
+      RA_Graveyard_Animation03_51: 1700568948
+      RA_Graveyard_Animation03_52: -1791512883
+      RA_Graveyard_Animation03_53: -781715099
+      RA_Graveyard_Animation03_54: -1680047522
+      RA_Graveyard_Animation03_55: -953223892
       RA_Graveyard_Animation03_56: -323753341
-      RA_Graveyard_Animation03_71: 60586730
+      RA_Graveyard_Animation03_57: 1884293929
+      RA_Graveyard_Animation03_58: -901026596
+      RA_Graveyard_Animation03_59: 1336289548
+      RA_Graveyard_Animation03_6: 290579081
+      RA_Graveyard_Animation03_60: 1307362035
+      RA_Graveyard_Animation03_61: 324293318
       RA_Graveyard_Animation03_62: -1140368747
       RA_Graveyard_Animation03_63: -1678049770
-      RA_Graveyard_Animation03_50: 407062020
-      RA_Graveyard_Animation03_36: -2133587913
-      RA_Graveyard_Animation03_23: 2115886065
-      RA_Graveyard_Animation03_58: -901026596
-      RA_Graveyard_Animation03_88: -656791358
+      RA_Graveyard_Animation03_64: -1542006643
+      RA_Graveyard_Animation03_65: -263554159
+      RA_Graveyard_Animation03_66: 1237608460
       RA_Graveyard_Animation03_67: 1158219570
-      RA_Graveyard_Animation03_43: -1515564614
-      RA_Graveyard_Animation03_76: -1459294470
-      RA_Graveyard_Animation03_94: 254692321
-      RA_Graveyard_Animation03_40: 2070227445
-      RA_Graveyard_Animation03_60: 1307362035
-      RA_Graveyard_Animation03_7: 154392345
-      RA_Graveyard_Animation03_27: 203114678
-      RA_Graveyard_Animation03_30: 2728491
-      RA_Graveyard_Animation03_28: 1709050513
-      RA_Graveyard_Animation03_79: -27160947
-      RA_Graveyard_Animation03_75: -1794677315
-      RA_Graveyard_Animation03_53: -781715099
-      RA_Graveyard_Animation03_51: 1700568948
-      RA_Graveyard_Animation03_44: 693749336
-      RA_Graveyard_Animation03_3: -43030476
-      RA_Graveyard_Animation03_33: 552935766
-      RA_Graveyard_Animation03_29: -1545283353
-      RA_Graveyard_Animation03_45: -1185533600
-      RA_Graveyard_Animation03_70: -1283767914
-      RA_Graveyard_Animation03_11: -1255304574
+      RA_Graveyard_Animation03_68: 62419083
       RA_Graveyard_Animation03_69: 179384756
+      RA_Graveyard_Animation03_7: 154392345
+      RA_Graveyard_Animation03_70: -1283767914
+      RA_Graveyard_Animation03_71: 60586730
       RA_Graveyard_Animation03_72: -1707370465
-      RA_Graveyard_Animation03_78: -1567989088
-      RA_Graveyard_Animation03_86: -51895656
-      RA_Graveyard_Animation03_26: 571266680
-      RA_Graveyard_Animation03_35: -1167978855
-      RA_Graveyard_Animation03_95: -46812948
-      RA_Graveyard_Animation03_52: -1791512883
-      RA_Graveyard_Animation03_1: -382758215
-      RA_Graveyard_Animation03_31: 703586475
-      RA_Graveyard_Animation03_96: -414911011
+      RA_Graveyard_Animation03_73: 1467689062
+      RA_Graveyard_Animation03_74: 383885169
+      RA_Graveyard_Animation03_75: -1794677315
+      RA_Graveyard_Animation03_76: -1459294470
       RA_Graveyard_Animation03_77: -2105741514
-      RA_Graveyard_Animation03_55: -953223892
-      RA_Graveyard_Animation03_97: -1575798860
-      RA_Graveyard_Animation03_22: -2013407453
-      RA_Graveyard_Animation03_84: -1003562431
-      RA_Graveyard_Animation03_21: -1460411609
-      RA_Graveyard_Animation03_2: 1923479257
-      RA_Graveyard_Animation03_92: -795432881
-      RA_Graveyard_Animation03_98: 377162119
-      RA_Graveyard_Animation03_13: -1391741333
+      RA_Graveyard_Animation03_78: -1567989088
+      RA_Graveyard_Animation03_79: -27160947
+      RA_Graveyard_Animation03_8: -497572408
+      RA_Graveyard_Animation03_80: 58525194
       RA_Graveyard_Animation03_81: -1768261145
+      RA_Graveyard_Animation03_82: -621981876
+      RA_Graveyard_Animation03_83: -2103597415
+      RA_Graveyard_Animation03_84: -1003562431
       RA_Graveyard_Animation03_85: -1945918261
-      RA_Graveyard_Animation03_99: 241714135
-      RA_Graveyard_Animation03_38: -1988950977
-      RA_Graveyard_Animation03_15: -371617008
-      RA_Graveyard_Animation03_42: 580140116
+      RA_Graveyard_Animation03_86: -51895656
+      RA_Graveyard_Animation03_87: 715707818
+      RA_Graveyard_Animation03_88: -656791358
+      RA_Graveyard_Animation03_89: 353929561
+      RA_Graveyard_Animation03_9: 1287859980
       RA_Graveyard_Animation03_90: -1576168564
-      RA_Graveyard_Animation03_16: -1646928010
-      RA_Graveyard_Animation03_48: 444464873
-  spritePackingTag: 
+      RA_Graveyard_Animation03_91: -761532226
+      RA_Graveyard_Animation03_92: -795432881
+      RA_Graveyard_Animation03_93: -1389935270
+      RA_Graveyard_Animation03_94: 254692321
+      RA_Graveyard_Animation03_95: -46812948
+      RA_Graveyard_Animation03_96: -414911011
+      RA_Graveyard_Animation03_97: -1575798860
+      RA_Graveyard_Animation03_98: 377162119
+      RA_Graveyard_Animation03_99: 241714135
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

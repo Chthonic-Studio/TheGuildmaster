@@ -3,7 +3,7 @@ guid: 98853ebc2cad3ca4b8c737307f68c411
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,33 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -756,39 +789,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RA_Ruins_Animation01_1: 1129016689
-      RA_Ruins_Animation01_2: 310884476
-      RA_Ruins_Animation01_23: 1971739539
-      RA_Ruins_Animation01_6: -195950025
-      RA_Ruins_Animation01_14: -942173593
-      RA_Ruins_Animation01_17: 1165649283
-      RA_Ruins_Animation01_5: 1835591738
-      RA_Ruins_Animation01_21: 426101100
-      RA_Ruins_Animation01_13: -1493171665
-      RA_Ruins_Animation01_12: 427789117
-      RA_Ruins_Animation01_22: 95767676
-      RA_Ruins_Animation01_27: 1926146155
-      RA_Ruins_Animation01_16: 891439922
-      RA_Ruins_Animation01_8: -1148340411
-      RA_Ruins_Animation01_4: 1059662605
-      RA_Ruins_Animation01_3: 790970803
-      RA_Ruins_Animation01_25: -971719181
-      RA_Ruins_Animation01_19: 52407226
-      RA_Ruins_Animation01_10: -646021522
-      RA_Ruins_Animation01_7: -1980380413
-      RA_Ruins_Animation01_18: 717210984
       RA_Ruins_Animation01_0: 2145620002
-      RA_Ruins_Animation01_15: -1075665907
-      RA_Ruins_Animation01_26: 190586291
-      RA_Ruins_Animation01_28: -802227836
-      RA_Ruins_Animation01_24: -141630408
-      RA_Ruins_Animation01_9: -2054376806
+      RA_Ruins_Animation01_1: 1129016689
+      RA_Ruins_Animation01_10: -646021522
       RA_Ruins_Animation01_11: -2037239937
-      RA_Ruins_Animation01_29: -161897034
+      RA_Ruins_Animation01_12: 427789117
+      RA_Ruins_Animation01_13: -1493171665
+      RA_Ruins_Animation01_14: -942173593
+      RA_Ruins_Animation01_15: -1075665907
+      RA_Ruins_Animation01_16: 891439922
+      RA_Ruins_Animation01_17: 1165649283
+      RA_Ruins_Animation01_18: 717210984
+      RA_Ruins_Animation01_19: 52407226
+      RA_Ruins_Animation01_2: 310884476
       RA_Ruins_Animation01_20: -1287592027
-  spritePackingTag: 
+      RA_Ruins_Animation01_21: 426101100
+      RA_Ruins_Animation01_22: 95767676
+      RA_Ruins_Animation01_23: 1971739539
+      RA_Ruins_Animation01_24: -141630408
+      RA_Ruins_Animation01_25: -971719181
+      RA_Ruins_Animation01_26: 190586291
+      RA_Ruins_Animation01_27: 1926146155
+      RA_Ruins_Animation01_28: -802227836
+      RA_Ruins_Animation01_29: -161897034
+      RA_Ruins_Animation01_3: 790970803
+      RA_Ruins_Animation01_4: 1059662605
+      RA_Ruins_Animation01_5: 1835591738
+      RA_Ruins_Animation01_6: -195950025
+      RA_Ruins_Animation01_7: -1980380413
+      RA_Ruins_Animation01_8: -1148340411
+      RA_Ruins_Animation01_9: -2054376806
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

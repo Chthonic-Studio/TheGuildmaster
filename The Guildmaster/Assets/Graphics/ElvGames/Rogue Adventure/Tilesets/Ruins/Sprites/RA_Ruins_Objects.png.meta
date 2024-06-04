@@ -3,7 +3,7 @@ guid: 7184da2686a7a31469545e0feec472e0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,33 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2016,99 +2049,98 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RA_Ruins_Objects_30: 1028766659
-      RA_Ruins_Objects_64: -1616608262
+      RA_Ruins_Objects_0: 1577908469
       RA_Ruins_Objects_1: 1303203597
-      RA_Ruins_Objects_4: 1407138560
-      RA_Ruins_Objects_11: 742934995
-      RA_Ruins_Objects_2: 1897688998
-      RA_Ruins_Objects_14: 1126681277
-      RA_Ruins_Objects_21: -522969466
-      RA_Ruins_Objects_49: -1621347443
-      RA_Ruins_Objects_54: -979083195
-      RA_Ruins_Objects_37: -694878019
-      RA_Ruins_Objects_59: 1037047197
-      RA_Ruins_Objects_19: 863998345
-      RA_Ruins_Objects_73: 845908360
-      RA_Ruins_Objects_88: 592044223
-      RA_Ruins_Objects_28: 629597602
-      RA_Ruins_Objects_7: -46085981
-      RA_Ruins_Objects_45: -1420517730
-      RA_Ruins_Objects_57: 804857565
-      RA_Ruins_Objects_56: -2011444761
-      RA_Ruins_Objects_72: 494642877
-      RA_Ruins_Objects_47: -1346857440
-      RA_Ruins_Objects_71: -906458639
-      RA_Ruins_Objects_6: 524473456
-      RA_Ruins_Objects_34: 1499986889
-      RA_Ruins_Objects_51: -1575506928
-      RA_Ruins_Objects_50: -2045840448
-      RA_Ruins_Objects_78: -2144417654
-      RA_Ruins_Objects_31: -1111068651
       RA_Ruins_Objects_10: 1479766900
-      RA_Ruins_Objects_74: 673030558
-      RA_Ruins_Objects_39: 47981503
-      RA_Ruins_Objects_84: 1908722770
-      RA_Ruins_Objects_58: -228626099
-      RA_Ruins_Objects_55: 210793024
-      RA_Ruins_Objects_38: 1228758931
-      RA_Ruins_Objects_43: -365211835
+      RA_Ruins_Objects_11: 742934995
+      RA_Ruins_Objects_12: -1049342444
+      RA_Ruins_Objects_13: -214610142
+      RA_Ruins_Objects_14: 1126681277
+      RA_Ruins_Objects_15: 311223490
+      RA_Ruins_Objects_16: 917938746
+      RA_Ruins_Objects_17: -1395838331
+      RA_Ruins_Objects_18: -310800933
+      RA_Ruins_Objects_19: 863998345
+      RA_Ruins_Objects_2: 1897688998
       RA_Ruins_Objects_20: 1057887328
-      RA_Ruins_Objects_82: 70247316
+      RA_Ruins_Objects_21: -522969466
       RA_Ruins_Objects_22: 515646803
-      RA_Ruins_Objects_67: -487150043
+      RA_Ruins_Objects_23: -2014559676
+      RA_Ruins_Objects_24: 620316781
+      RA_Ruins_Objects_25: -894522947
+      RA_Ruins_Objects_26: 1343109684
+      RA_Ruins_Objects_27: -117037509
+      RA_Ruins_Objects_28: 629597602
+      RA_Ruins_Objects_29: 361817132
       RA_Ruins_Objects_3: -176973624
+      RA_Ruins_Objects_30: 1028766659
+      RA_Ruins_Objects_31: -1111068651
+      RA_Ruins_Objects_32: 1147916274
+      RA_Ruins_Objects_33: 1104492296
+      RA_Ruins_Objects_34: 1499986889
+      RA_Ruins_Objects_35: 1647852391
+      RA_Ruins_Objects_36: 1661805019
+      RA_Ruins_Objects_37: -694878019
+      RA_Ruins_Objects_38: 1228758931
+      RA_Ruins_Objects_39: 47981503
+      RA_Ruins_Objects_4: 1407138560
+      RA_Ruins_Objects_40: 77706674
+      RA_Ruins_Objects_41: 1784089765
+      RA_Ruins_Objects_42: 2099309011
+      RA_Ruins_Objects_43: -365211835
+      RA_Ruins_Objects_44: 129997033
+      RA_Ruins_Objects_45: -1420517730
+      RA_Ruins_Objects_46: 929744482
+      RA_Ruins_Objects_47: -1346857440
+      RA_Ruins_Objects_48: -856889030
+      RA_Ruins_Objects_49: -1621347443
+      RA_Ruins_Objects_5: -791377714
+      RA_Ruins_Objects_50: -2045840448
+      RA_Ruins_Objects_51: -1575506928
       RA_Ruins_Objects_52: -65510070
       RA_Ruins_Objects_53: -1658259829
-      RA_Ruins_Objects_66: 1334411384
+      RA_Ruins_Objects_54: -979083195
+      RA_Ruins_Objects_55: 210793024
+      RA_Ruins_Objects_56: -2011444761
+      RA_Ruins_Objects_57: 804857565
+      RA_Ruins_Objects_58: -228626099
+      RA_Ruins_Objects_59: 1037047197
+      RA_Ruins_Objects_6: 524473456
       RA_Ruins_Objects_60: -438184527
-      RA_Ruins_Objects_46: 929744482
       RA_Ruins_Objects_61: 13539200
-      RA_Ruins_Objects_68: 1204500585
-      RA_Ruins_Objects_76: 58843723
-      RA_Ruins_Objects_8: -1126366493
-      RA_Ruins_Objects_32: 1147916274
-      RA_Ruins_Objects_0: 1577908469
-      RA_Ruins_Objects_12: -1049342444
-      RA_Ruins_Objects_89: 1115618580
-      RA_Ruins_Objects_65: 1035852891
-      RA_Ruins_Objects_18: -310800933
-      RA_Ruins_Objects_5: -791377714
-      RA_Ruins_Objects_17: -1395838331
-      RA_Ruins_Objects_85: 1223869328
-      RA_Ruins_Objects_9: 2105104708
-      RA_Ruins_Objects_81: -2055567644
-      RA_Ruins_Objects_26: 1343109684
-      RA_Ruins_Objects_29: 361817132
-      RA_Ruins_Objects_69: -807695624
-      RA_Ruins_Objects_42: 2099309011
-      RA_Ruins_Objects_70: -1171553639
-      RA_Ruins_Objects_75: -292144718
-      RA_Ruins_Objects_87: -133866000
-      RA_Ruins_Objects_27: -117037509
-      RA_Ruins_Objects_35: 1647852391
-      RA_Ruins_Objects_83: 789680960
-      RA_Ruins_Objects_44: 129997033
-      RA_Ruins_Objects_24: 620316781
       RA_Ruins_Objects_62: -554422932
-      RA_Ruins_Objects_79: 1657476642
-      RA_Ruins_Objects_48: -856889030
-      RA_Ruins_Objects_15: 311223490
-      RA_Ruins_Objects_33: 1104492296
-      RA_Ruins_Objects_80: -588887050
-      RA_Ruins_Objects_36: 1661805019
-      RA_Ruins_Objects_77: -340677310
-      RA_Ruins_Objects_16: 917938746
-      RA_Ruins_Objects_40: 77706674
-      RA_Ruins_Objects_13: -214610142
-      RA_Ruins_Objects_86: -1524698593
       RA_Ruins_Objects_63: -1378037886
-      RA_Ruins_Objects_25: -894522947
-      RA_Ruins_Objects_41: 1784089765
-      RA_Ruins_Objects_23: -2014559676
-  spritePackingTag: 
+      RA_Ruins_Objects_64: -1616608262
+      RA_Ruins_Objects_65: 1035852891
+      RA_Ruins_Objects_66: 1334411384
+      RA_Ruins_Objects_67: -487150043
+      RA_Ruins_Objects_68: 1204500585
+      RA_Ruins_Objects_69: -807695624
+      RA_Ruins_Objects_7: -46085981
+      RA_Ruins_Objects_70: -1171553639
+      RA_Ruins_Objects_71: -906458639
+      RA_Ruins_Objects_72: 494642877
+      RA_Ruins_Objects_73: 845908360
+      RA_Ruins_Objects_74: 673030558
+      RA_Ruins_Objects_75: -292144718
+      RA_Ruins_Objects_76: 58843723
+      RA_Ruins_Objects_77: -340677310
+      RA_Ruins_Objects_78: -2144417654
+      RA_Ruins_Objects_79: 1657476642
+      RA_Ruins_Objects_8: -1126366493
+      RA_Ruins_Objects_80: -588887050
+      RA_Ruins_Objects_81: -2055567644
+      RA_Ruins_Objects_82: 70247316
+      RA_Ruins_Objects_83: 789680960
+      RA_Ruins_Objects_84: 1908722770
+      RA_Ruins_Objects_85: 1223869328
+      RA_Ruins_Objects_86: -1524698593
+      RA_Ruins_Objects_87: -133866000
+      RA_Ruins_Objects_88: 592044223
+      RA_Ruins_Objects_89: 1115618580
+      RA_Ruins_Objects_9: 2105104708
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

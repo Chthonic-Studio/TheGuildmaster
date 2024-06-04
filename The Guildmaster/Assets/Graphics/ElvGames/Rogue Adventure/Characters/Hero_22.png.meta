@@ -3,7 +3,7 @@ guid: 4126a34522088fd48ba348b82f3ad302
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,33 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1554,77 +1587,76 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Hero_22_13: 422443406
-      Hero_22_21: -1899344895
-      Hero_22_4: 593034490
-      Hero_22_52: -1748699453
       Hero_22_0: 1733791857
-      Hero_22_49: 1688953014
-      Hero_22_33: 1216549629
-      Hero_22_51: 1629937710
-      Hero_22_10: 45599020
-      Hero_22_37: 778899800
-      Hero_22_34: 507433275
-      Hero_22_30: -2146745221
-      Hero_22_50: 1891258857
-      Hero_22_42: 1432856132
-      Hero_22_56: 1055414502
-      Hero_22_55: -1097844996
-      Hero_22_17: 1221086438
-      Hero_22_19: -94519124
-      Hero_22_12: 2140229984
-      Hero_22_57: -310556
-      Hero_22_16: -1462424644
-      Hero_22_31: 42095759
-      Hero_22_64: 902847549
-      Hero_22_23: -1912862262
-      Hero_22_41: -1293578479
-      Hero_22_60: 1426124649
-      Hero_22_24: 1498471067
-      Hero_22_22: 1061148764
-      Hero_22_61: -2118989160
-      Hero_22_5: 1784477725
       Hero_22_1: -211180202
-      Hero_22_62: 2917674
-      Hero_22_2: -805366679
-      Hero_22_48: -139706474
-      Hero_22_29: 564650969
-      Hero_22_15: -535824658
-      Hero_22_53: 731310667
-      Hero_22_3: 1578121816
+      Hero_22_10: 45599020
+      Hero_22_11: 1699559800
+      Hero_22_12: 2140229984
+      Hero_22_13: 422443406
       Hero_22_14: -444768233
+      Hero_22_15: -535824658
+      Hero_22_16: -1462424644
+      Hero_22_17: 1221086438
+      Hero_22_18: -452469474
+      Hero_22_19: -94519124
+      Hero_22_2: -805366679
       Hero_22_20: 1876566341
-      Hero_22_65: 475101892
-      Hero_22_26: -1557925805
-      Hero_22_40: 1066961415
-      Hero_22_7: -2054806075
-      Hero_22_58: 1499155109
-      Hero_22_8: -857584643
-      Hero_22_46: -1690462412
-      Hero_22_27: -444251929
+      Hero_22_21: -1899344895
+      Hero_22_22: 1061148764
+      Hero_22_23: -1912862262
+      Hero_22_24: 1498471067
       Hero_22_25: 400126267
+      Hero_22_26: -1557925805
+      Hero_22_27: -444251929
       Hero_22_28: -1735410253
-      Hero_22_9: 586182038
+      Hero_22_29: 564650969
+      Hero_22_3: 1578121816
+      Hero_22_30: -2146745221
+      Hero_22_31: 42095759
+      Hero_22_32: -1602527633
+      Hero_22_33: 1216549629
+      Hero_22_34: 507433275
       Hero_22_35: 2130005976
       Hero_22_36: -61738145
-      Hero_22_43: -211728057
-      Hero_22_6: -1601357602
-      Hero_22_45: 1029865139
-      Hero_22_44: -397397886
+      Hero_22_37: 778899800
       Hero_22_38: -1693386557
-      Hero_22_32: -1602527633
-      Hero_22_47: -1193517549
-      Hero_22_54: 1872450873
-      Hero_22_18: -452469474
       Hero_22_39: -2007097828
-      Hero_22_11: 1699559800
+      Hero_22_4: 593034490
+      Hero_22_40: 1066961415
+      Hero_22_41: -1293578479
+      Hero_22_42: 1432856132
+      Hero_22_43: -211728057
+      Hero_22_44: -397397886
+      Hero_22_45: 1029865139
+      Hero_22_46: -1690462412
+      Hero_22_47: -1193517549
+      Hero_22_48: -139706474
+      Hero_22_49: 1688953014
+      Hero_22_5: 1784477725
+      Hero_22_50: 1891258857
+      Hero_22_51: 1629937710
+      Hero_22_52: -1748699453
+      Hero_22_53: 731310667
+      Hero_22_54: 1872450873
+      Hero_22_55: -1097844996
+      Hero_22_56: 1055414502
+      Hero_22_57: -310556
+      Hero_22_58: 1499155109
       Hero_22_59: -965083736
+      Hero_22_6: -1601357602
+      Hero_22_60: 1426124649
+      Hero_22_61: -2118989160
+      Hero_22_62: 2917674
       Hero_22_63: 90726295
-      Hero_22_67: -973395096
+      Hero_22_64: 902847549
+      Hero_22_65: 475101892
       Hero_22_66: -99660932
-  spritePackingTag: 
+      Hero_22_67: -973395096
+      Hero_22_7: -2054806075
+      Hero_22_8: -857584643
+      Hero_22_9: 586182038
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

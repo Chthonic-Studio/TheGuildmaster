@@ -3,7 +3,7 @@ guid: 4b968fd9f68ad2548a41f9bf30bdffe3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,33 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -756,39 +789,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RA_Graveyard_Animation02_7: 408491783
-      RA_Graveyard_Animation02_14: 103183605
-      RA_Graveyard_Animation02_5: -1065211932
-      RA_Graveyard_Animation02_9: -143904609
-      RA_Graveyard_Animation02_3: 1732333731
       RA_Graveyard_Animation02_0: -1964185337
-      RA_Graveyard_Animation02_20: -12365220
-      RA_Graveyard_Animation02_13: 687087728
-      RA_Graveyard_Animation02_22: 1142249342
-      RA_Graveyard_Animation02_17: 84062933
-      RA_Graveyard_Animation02_15: -356894868
-      RA_Graveyard_Animation02_16: 545999544
-      RA_Graveyard_Animation02_4: -142590770
-      RA_Graveyard_Animation02_19: -622448508
-      RA_Graveyard_Animation02_8: -2070727376
-      RA_Graveyard_Animation02_24: 105136501
-      RA_Graveyard_Animation02_21: 131393236
-      RA_Graveyard_Animation02_23: -1962947161
-      RA_Graveyard_Animation02_2: -1956859045
       RA_Graveyard_Animation02_1: 1156733159
-      RA_Graveyard_Animation02_26: 1499701677
-      RA_Graveyard_Animation02_25: -2068449806
-      RA_Graveyard_Animation02_6: 797668995
-      RA_Graveyard_Animation02_28: -1285350743
-      RA_Graveyard_Animation02_29: -1937603348
-      RA_Graveyard_Animation02_27: -1555429157
       RA_Graveyard_Animation02_10: -1808069529
-      RA_Graveyard_Animation02_18: 1866005646
       RA_Graveyard_Animation02_11: 1251444208
       RA_Graveyard_Animation02_12: -1593521583
-  spritePackingTag: 
+      RA_Graveyard_Animation02_13: 687087728
+      RA_Graveyard_Animation02_14: 103183605
+      RA_Graveyard_Animation02_15: -356894868
+      RA_Graveyard_Animation02_16: 545999544
+      RA_Graveyard_Animation02_17: 84062933
+      RA_Graveyard_Animation02_18: 1866005646
+      RA_Graveyard_Animation02_19: -622448508
+      RA_Graveyard_Animation02_2: -1956859045
+      RA_Graveyard_Animation02_20: -12365220
+      RA_Graveyard_Animation02_21: 131393236
+      RA_Graveyard_Animation02_22: 1142249342
+      RA_Graveyard_Animation02_23: -1962947161
+      RA_Graveyard_Animation02_24: 105136501
+      RA_Graveyard_Animation02_25: -2068449806
+      RA_Graveyard_Animation02_26: 1499701677
+      RA_Graveyard_Animation02_27: -1555429157
+      RA_Graveyard_Animation02_28: -1285350743
+      RA_Graveyard_Animation02_29: -1937603348
+      RA_Graveyard_Animation02_3: 1732333731
+      RA_Graveyard_Animation02_4: -142590770
+      RA_Graveyard_Animation02_5: -1065211932
+      RA_Graveyard_Animation02_6: 797668995
+      RA_Graveyard_Animation02_7: 408491783
+      RA_Graveyard_Animation02_8: -2070727376
+      RA_Graveyard_Animation02_9: -143904609
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

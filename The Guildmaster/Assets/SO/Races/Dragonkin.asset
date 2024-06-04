@@ -1,0 +1,203 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4920f3f7de1fa4bac1a37b3633f238, type: 3}
+  m_Name: Dragonkin
+  m_EditorClassIdentifier: 
+  Name: Dragonkin
+  Description: A dragonkin
+  LifeExpentancy:
+    minValue: 0
+    maxValue: 0
+  Health:
+    minValue: 0
+    maxValue: 0
+  Mana:
+    minValue: 0
+    maxValue: 0
+  Strength:
+    minValue: 0
+    maxValue: 0
+  Agility:
+    minValue: 0
+    maxValue: 0
+  Constitution:
+    minValue: 0
+    maxValue: 0
+  Wisdom:
+    minValue: 0
+    maxValue: 0
+  Intelligence:
+    minValue: 0
+    maxValue: 0
+  Charisma:
+    minValue: 0
+    maxValue: 0
+  Adaptability:
+    minValue: 0
+    maxValue: 0
+  Tenacity:
+    minValue: 0
+    maxValue: 0
+  Loyalty:
+    minValue: 0
+    maxValue: 0
+  Ambition:
+    minValue: 0
+    maxValue: 0
+  Good:
+    minValue: 0
+    maxValue: 0
+  Evil:
+    minValue: 0
+    maxValue: 0
+  Leadership:
+    minValue: 0
+    maxValue: 0
+  Willpower:
+    minValue: 0
+    maxValue: 0
+  Luck:
+    minValue: 0
+    maxValue: 0
+  Perception:
+    minValue: 0
+    maxValue: 0
+  Morale:
+    minValue: 0
+    maxValue: 0
+  FireAffinity:
+    minValue: 0
+    maxValue: 0
+  WaterAffinity:
+    minValue: 0
+    maxValue: 0
+  EarthAffinity:
+    minValue: 0
+    maxValue: 0
+  AirAffinity:
+    minValue: 0
+    maxValue: 0
+  LightAffinity:
+    minValue: 0
+    maxValue: 0
+  DarkAffinity:
+    minValue: 0
+    maxValue: 0
+  ArcaneAffinity:
+    minValue: 0
+    maxValue: 0
+  NatureAffinity:
+    minValue: 0
+    maxValue: 0
+  PsionicAffinity:
+    minValue: 0
+    maxValue: 0
+  LightningAffinity:
+    minValue: 0
+    maxValue: 0
+  FireResistance:
+    minValue: 0
+    maxValue: 0
+  WaterResistance:
+    minValue: 0
+    maxValue: 0
+  EarthResistance:
+    minValue: 0
+    maxValue: 0
+  AirResistance:
+    minValue: 0
+    maxValue: 0
+  LightResistance:
+    minValue: 0
+    maxValue: 0
+  DarkResistance:
+    minValue: 0
+    maxValue: 0
+  ArcaneResistance:
+    minValue: 0
+    maxValue: 0
+  NatureResistance:
+    minValue: 0
+    maxValue: 0
+  LightningResistance:
+    minValue: 0
+    maxValue: 0
+  PsionicResistance:
+    minValue: 0
+    maxValue: 0
+  Sociability:
+    minValue: 0
+    maxValue: 0
+  Confidence:
+    minValue: 0
+    maxValue: 0
+  Empathy:
+    minValue: 0
+    maxValue: 0
+  Humor:
+    minValue: 0
+    maxValue: 0
+  Curiosity:
+    minValue: 0
+    maxValue: 0
+  Creativity:
+    minValue: 0
+    maxValue: 0
+  Discipline:
+    minValue: 0
+    maxValue: 0
+  Patience:
+    minValue: 0
+    maxValue: 0
+  Honesty:
+    minValue: 0
+    maxValue: 0
+  Bravery:
+    minValue: 0
+    maxValue: 0
+  Persuasion:
+    minValue: 0
+    maxValue: 0
+  Intimidation:
+    minValue: 0
+    maxValue: 0
+  Deception:
+    minValue: 0
+    maxValue: 0
+  Diplomacy:
+    minValue: 0
+    maxValue: 0
+  Aggression:
+    minValue: 0
+    maxValue: 0
+  Resourcefulness:
+    minValue: 0
+    maxValue: 0
+  Cunning:
+    minValue: 0
+    maxValue: 0
+  Integrity:
+    minValue: 0
+    maxValue: 0
+  Humility:
+    minValue: 0
+    maxValue: 0
+  weight: 0
+  requiredPlayerLevel: 0
+  requiredYear: 0
+  requiredTowerFloor: 0
+  recruitmentCost:
+    minValue: 0
+    maxValue: 0
+  maintenanceCost:
+    minValue: 0
+    maxValue: 0

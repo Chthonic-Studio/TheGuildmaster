@@ -3,7 +3,7 @@ guid: 597925440b1cd6e4d8003ff2708f108f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,33 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -546,29 +579,28 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RA_Pyramid_Animation02_13: -1547936800
-      RA_Pyramid_Animation02_18: 1163922922
-      RA_Pyramid_Animation02_4: -879334050
-      RA_Pyramid_Animation02_5: -1946547998
-      RA_Pyramid_Animation02_17: -1299724297
-      RA_Pyramid_Animation02_2: 1568416182
-      RA_Pyramid_Animation02_6: 1976415432
-      RA_Pyramid_Animation02_3: 424678289
+      RA_Pyramid_Animation02_0: 751181572
+      RA_Pyramid_Animation02_1: -1592063237
       RA_Pyramid_Animation02_10: -485343959
+      RA_Pyramid_Animation02_11: -360358995
+      RA_Pyramid_Animation02_12: 1954923062
+      RA_Pyramid_Animation02_13: -1547936800
       RA_Pyramid_Animation02_14: 832396294
       RA_Pyramid_Animation02_15: 1232679687
-      RA_Pyramid_Animation02_1: -1592063237
-      RA_Pyramid_Animation02_7: 1152281071
-      RA_Pyramid_Animation02_0: 751181572
-      RA_Pyramid_Animation02_8: -319815334
-      RA_Pyramid_Animation02_12: 1954923062
-      RA_Pyramid_Animation02_19: -531470995
-      RA_Pyramid_Animation02_9: -1494771488
-      RA_Pyramid_Animation02_11: -360358995
       RA_Pyramid_Animation02_16: -1053966980
-  spritePackingTag: 
+      RA_Pyramid_Animation02_17: -1299724297
+      RA_Pyramid_Animation02_18: 1163922922
+      RA_Pyramid_Animation02_19: -531470995
+      RA_Pyramid_Animation02_2: 1568416182
+      RA_Pyramid_Animation02_3: 424678289
+      RA_Pyramid_Animation02_4: -879334050
+      RA_Pyramid_Animation02_5: -1946547998
+      RA_Pyramid_Animation02_6: 1976415432
+      RA_Pyramid_Animation02_7: 1152281071
+      RA_Pyramid_Animation02_8: -319815334
+      RA_Pyramid_Animation02_9: -1494771488
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

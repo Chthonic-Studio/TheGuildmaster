@@ -3,7 +3,7 @@ guid: ee7f808302f5aa64a85a4255602b31f1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,33 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -735,38 +768,37 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Enemy_010_B_3: -1129940836
-      Enemy_010_B_19: 977252084
-      Enemy_010_B_8: -792487369
-      Enemy_010_B_25: 2102182251
-      Enemy_010_B_4: 877473605
-      Enemy_010_B_11: -58079508
-      Enemy_010_B_12: -2140208578
-      Enemy_010_B_26: -1493031355
-      Enemy_010_B_5: -71485156
-      Enemy_010_B_23: 1764755637
       Enemy_010_B_0: -161665393
-      Enemy_010_B_2: -2111871679
-      Enemy_010_B_16: 2070566259
-      Enemy_010_B_14: -872483776
-      Enemy_010_B_20: -1153029161
-      Enemy_010_B_9: -1711656786
-      Enemy_010_B_24: -668759545
-      Enemy_010_B_7: -911171200
-      Enemy_010_B_15: 1947284162
-      Enemy_010_B_22: 2063449790
-      Enemy_010_B_13: -1777616059
-      Enemy_010_B_18: 14877694
       Enemy_010_B_1: 749851848
       Enemy_010_B_10: -532373290
+      Enemy_010_B_11: -58079508
+      Enemy_010_B_12: -2140208578
+      Enemy_010_B_13: -1777616059
+      Enemy_010_B_14: -872483776
+      Enemy_010_B_15: 1947284162
+      Enemy_010_B_16: 2070566259
       Enemy_010_B_17: -1111649772
-      Enemy_010_B_27: -425458869
+      Enemy_010_B_18: 14877694
+      Enemy_010_B_19: 977252084
+      Enemy_010_B_2: -2111871679
+      Enemy_010_B_20: -1153029161
       Enemy_010_B_21: -1955751381
+      Enemy_010_B_22: 2063449790
+      Enemy_010_B_23: 1764755637
+      Enemy_010_B_24: -668759545
+      Enemy_010_B_25: 2102182251
+      Enemy_010_B_26: -1493031355
+      Enemy_010_B_27: -425458869
       Enemy_010_B_28: 388383336
+      Enemy_010_B_3: -1129940836
+      Enemy_010_B_4: 877473605
+      Enemy_010_B_5: -71485156
       Enemy_010_B_6: 1883579749
-  spritePackingTag: 
+      Enemy_010_B_7: -911171200
+      Enemy_010_B_8: -792487369
+      Enemy_010_B_9: -1711656786
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

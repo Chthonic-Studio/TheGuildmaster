@@ -11,9 +11,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Ground
+  - Walls
+  - Characters
   - 
   - 
   - 
@@ -40,4 +40,34 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Water
+    uniqueID: 3468768539
+    locked: 0
+  - name: Paths
+    uniqueID: 328475061
+    locked: 0
+  - name: Ground
+    uniqueID: 372752095
+    locked: 0
+  - name: Ground1
+    uniqueID: 3957046195
+    locked: 0
+  - name: Ground2
+    uniqueID: 1872125497
+    locked: 0
+  - name: Characters
+    uniqueID: 1405602735
+    locked: 0
+  - name: Walls
+    uniqueID: 1090135079
+    locked: 0
+  - name: WallDeco
+    uniqueID: 2728225679
+    locked: 0
+  - name: Ceiling
+    uniqueID: 3015988977
+    locked: 0
+  - name: CeilingDeco
+    uniqueID: 852725429
     locked: 0

@@ -3,7 +3,7 @@ guid: cf3184a0a71f2484fa3fc2b5ca6b0796
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,33 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -3591,174 +3624,173 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RA_Beast_Animation01_111: -696820008
-      RA_Beast_Animation01_61: -1973665201
-      RA_Beast_Animation01_100: 101949335
-      RA_Beast_Animation01_112: 494971303
-      RA_Beast_Animation01_30: 897459692
-      RA_Beast_Animation01_86: -1856744578
-      RA_Beast_Animation01_80: 1550980750
-      RA_Beast_Animation01_150: 861910852
-      RA_Beast_Animation01_54: -112808241
-      RA_Beast_Animation01_36: -1146051415
-      RA_Beast_Animation01_91: 1693911208
-      RA_Beast_Animation01_104: 1561578437
-      RA_Beast_Animation01_161: -1746059584
-      RA_Beast_Animation01_138: 1034536151
-      RA_Beast_Animation01_135: -778491378
-      RA_Beast_Animation01_125: -1169927316
-      RA_Beast_Animation01_16: 477584663
-      RA_Beast_Animation01_106: 2012621644
       RA_Beast_Animation01_0: 550745988
-      RA_Beast_Animation01_15: 631479596
-      RA_Beast_Animation01_32: 1121530134
-      RA_Beast_Animation01_55: -1962714673
-      RA_Beast_Animation01_3: 887183444
-      RA_Beast_Animation01_19: -1007688841
-      RA_Beast_Animation01_77: -1334059605
-      RA_Beast_Animation01_82: -673880893
-      RA_Beast_Animation01_43: 431368409
-      RA_Beast_Animation01_49: -1609002534
-      RA_Beast_Animation01_109: -1905900272
-      RA_Beast_Animation01_37: 1714363328
-      RA_Beast_Animation01_47: -1537278669
-      RA_Beast_Animation01_23: -319223271
-      RA_Beast_Animation01_29: 1594903806
-      RA_Beast_Animation01_147: 1396200877
-      RA_Beast_Animation01_157: -1326736117
+      RA_Beast_Animation01_1: -1401836824
       RA_Beast_Animation01_10: -57862733
-      RA_Beast_Animation01_139: 932656686
-      RA_Beast_Animation01_34: -1608118452
-      RA_Beast_Animation01_163: 613884945
-      RA_Beast_Animation01_81: -164061419
-      RA_Beast_Animation01_8: 750394828
-      RA_Beast_Animation01_78: -1376281328
-      RA_Beast_Animation01_79: -729262601
-      RA_Beast_Animation01_63: -24912648
-      RA_Beast_Animation01_27: 1482117396
-      RA_Beast_Animation01_51: 168171645
-      RA_Beast_Animation01_124: 756896711
-      RA_Beast_Animation01_96: 1713401467
-      RA_Beast_Animation01_24: -1052289664
-      RA_Beast_Animation01_75: 772472467
-      RA_Beast_Animation01_26: -1865682415
-      RA_Beast_Animation01_22: -53495041
-      RA_Beast_Animation01_12: -1569867679
-      RA_Beast_Animation01_94: -405510938
-      RA_Beast_Animation01_123: 1443133245
-      RA_Beast_Animation01_35: -670478895
-      RA_Beast_Animation01_4: -1886596117
-      RA_Beast_Animation01_76: 1695709194
-      RA_Beast_Animation01_162: 939631874
-      RA_Beast_Animation01_65: 328095042
-      RA_Beast_Animation01_58: 1461796209
-      RA_Beast_Animation01_110: 583892296
-      RA_Beast_Animation01_129: 1743990260
-      RA_Beast_Animation01_53: -1151078450
-      RA_Beast_Animation01_6: 1225044506
-      RA_Beast_Animation01_121: 401727320
-      RA_Beast_Animation01_83: 21283778
-      RA_Beast_Animation01_146: 367792631
-      RA_Beast_Animation01_18: -1168268797
-      RA_Beast_Animation01_62: 1513217085
-      RA_Beast_Animation01_149: -1454071311
-      RA_Beast_Animation01_14: -1023885242
-      RA_Beast_Animation01_39: 420105701
-      RA_Beast_Animation01_137: -1119076862
-      RA_Beast_Animation01_140: 135102625
-      RA_Beast_Animation01_84: 904359836
-      RA_Beast_Animation01_154: 1609062365
-      RA_Beast_Animation01_60: 1761625040
-      RA_Beast_Animation01_66: -597149864
-      RA_Beast_Animation01_56: 1016444409
-      RA_Beast_Animation01_41: 1603717257
-      RA_Beast_Animation01_57: 498468870
-      RA_Beast_Animation01_13: 1965042018
-      RA_Beast_Animation01_40: 1083670111
-      RA_Beast_Animation01_93: 1936592311
-      RA_Beast_Animation01_42: 882540760
-      RA_Beast_Animation01_90: -1156892948
-      RA_Beast_Animation01_85: -997024892
-      RA_Beast_Animation01_48: 1963797707
-      RA_Beast_Animation01_28: 84835185
-      RA_Beast_Animation01_11: 1520970591
-      RA_Beast_Animation01_73: -1075410203
-      RA_Beast_Animation01_98: -17084042
+      RA_Beast_Animation01_100: 101949335
+      RA_Beast_Animation01_101: -1419227686
+      RA_Beast_Animation01_102: -1052303108
       RA_Beast_Animation01_103: 1112632560
+      RA_Beast_Animation01_104: 1561578437
       RA_Beast_Animation01_105: 265925497
-      RA_Beast_Animation01_21: -455657954
-      RA_Beast_Animation01_143: 603196710
-      RA_Beast_Animation01_134: 598380332
-      RA_Beast_Animation01_155: -408771982
-      RA_Beast_Animation01_132: -806844665
-      RA_Beast_Animation01_74: -1691418537
-      RA_Beast_Animation01_160: -1892342192
-      RA_Beast_Animation01_2: 1054911905
-      RA_Beast_Animation01_95: 1680543812
-      RA_Beast_Animation01_99: -1526419286
-      RA_Beast_Animation01_45: -1824600747
-      RA_Beast_Animation01_87: 1003420768
-      RA_Beast_Animation01_92: -53150980
-      RA_Beast_Animation01_152: -810622287
-      RA_Beast_Animation01_64: -557618514
+      RA_Beast_Animation01_106: 2012621644
+      RA_Beast_Animation01_107: 1245502971
+      RA_Beast_Animation01_108: 1139692719
+      RA_Beast_Animation01_109: -1905900272
+      RA_Beast_Animation01_11: 1520970591
+      RA_Beast_Animation01_110: 583892296
+      RA_Beast_Animation01_111: -696820008
+      RA_Beast_Animation01_112: 494971303
+      RA_Beast_Animation01_113: -1337228393
+      RA_Beast_Animation01_114: 946683710
+      RA_Beast_Animation01_115: 1171033226
+      RA_Beast_Animation01_116: 1354911513
+      RA_Beast_Animation01_117: -1653862028
+      RA_Beast_Animation01_118: 1100439590
       RA_Beast_Animation01_119: -779284714
-      RA_Beast_Animation01_164: -1376193185
-      RA_Beast_Animation01_38: -516205640
+      RA_Beast_Animation01_12: -1569867679
+      RA_Beast_Animation01_120: -547283899
+      RA_Beast_Animation01_121: 401727320
+      RA_Beast_Animation01_122: 1767047089
+      RA_Beast_Animation01_123: 1443133245
+      RA_Beast_Animation01_124: 756896711
+      RA_Beast_Animation01_125: -1169927316
+      RA_Beast_Animation01_126: -1055753758
+      RA_Beast_Animation01_127: -1861744792
+      RA_Beast_Animation01_128: 985277429
+      RA_Beast_Animation01_129: 1743990260
+      RA_Beast_Animation01_13: 1965042018
+      RA_Beast_Animation01_130: -685324333
+      RA_Beast_Animation01_131: 1314347549
+      RA_Beast_Animation01_132: -806844665
+      RA_Beast_Animation01_133: 260150448
+      RA_Beast_Animation01_134: 598380332
+      RA_Beast_Animation01_135: -778491378
+      RA_Beast_Animation01_136: -2105321278
+      RA_Beast_Animation01_137: -1119076862
+      RA_Beast_Animation01_138: 1034536151
+      RA_Beast_Animation01_139: 932656686
+      RA_Beast_Animation01_14: -1023885242
+      RA_Beast_Animation01_140: 135102625
       RA_Beast_Animation01_141: -1571341684
       RA_Beast_Animation01_142: 2130075907
-      RA_Beast_Animation01_59: -1903717408
-      RA_Beast_Animation01_156: -374918790
-      RA_Beast_Animation01_69: 126797249
-      RA_Beast_Animation01_130: -685324333
-      RA_Beast_Animation01_20: 1067122354
-      RA_Beast_Animation01_159: -1872224019
-      RA_Beast_Animation01_17: -811801759
-      RA_Beast_Animation01_25: -46063883
-      RA_Beast_Animation01_131: 1314347549
-      RA_Beast_Animation01_126: -1055753758
-      RA_Beast_Animation01_136: -2105321278
-      RA_Beast_Animation01_127: -1861744792
-      RA_Beast_Animation01_153: -257430244
-      RA_Beast_Animation01_31: -93857594
-      RA_Beast_Animation01_145: 1322947406
-      RA_Beast_Animation01_52: -199773355
-      RA_Beast_Animation01_88: 676777925
-      RA_Beast_Animation01_151: -231404921
-      RA_Beast_Animation01_70: 901116801
-      RA_Beast_Animation01_117: -1653862028
-      RA_Beast_Animation01_68: -1983589409
-      RA_Beast_Animation01_67: -2117250705
-      RA_Beast_Animation01_148: 655002302
-      RA_Beast_Animation01_101: -1419227686
-      RA_Beast_Animation01_71: 1597206869
-      RA_Beast_Animation01_108: 1139692719
-      RA_Beast_Animation01_122: 1767047089
-      RA_Beast_Animation01_1: -1401836824
-      RA_Beast_Animation01_114: 946683710
-      RA_Beast_Animation01_5: -2066729075
-      RA_Beast_Animation01_113: -1337228393
-      RA_Beast_Animation01_33: -1136022180
-      RA_Beast_Animation01_72: -1950772337
+      RA_Beast_Animation01_143: 603196710
       RA_Beast_Animation01_144: 749552749
-      RA_Beast_Animation01_116: 1354911513
-      RA_Beast_Animation01_7: -1957015441
-      RA_Beast_Animation01_44: 927850107
-      RA_Beast_Animation01_102: -1052303108
-      RA_Beast_Animation01_118: 1100439590
-      RA_Beast_Animation01_120: -547283899
-      RA_Beast_Animation01_50: 1561991326
-      RA_Beast_Animation01_133: 260150448
-      RA_Beast_Animation01_89: -951567867
-      RA_Beast_Animation01_46: -2141759246
-      RA_Beast_Animation01_128: 985277429
-      RA_Beast_Animation01_97: -869604935
-      RA_Beast_Animation01_115: 1171033226
+      RA_Beast_Animation01_145: 1322947406
+      RA_Beast_Animation01_146: 367792631
+      RA_Beast_Animation01_147: 1396200877
+      RA_Beast_Animation01_148: 655002302
+      RA_Beast_Animation01_149: -1454071311
+      RA_Beast_Animation01_15: 631479596
+      RA_Beast_Animation01_150: 861910852
+      RA_Beast_Animation01_151: -231404921
+      RA_Beast_Animation01_152: -810622287
+      RA_Beast_Animation01_153: -257430244
+      RA_Beast_Animation01_154: 1609062365
+      RA_Beast_Animation01_155: -408771982
+      RA_Beast_Animation01_156: -374918790
+      RA_Beast_Animation01_157: -1326736117
       RA_Beast_Animation01_158: 194471731
-      RA_Beast_Animation01_107: 1245502971
+      RA_Beast_Animation01_159: -1872224019
+      RA_Beast_Animation01_16: 477584663
+      RA_Beast_Animation01_160: -1892342192
+      RA_Beast_Animation01_161: -1746059584
+      RA_Beast_Animation01_162: 939631874
+      RA_Beast_Animation01_163: 613884945
+      RA_Beast_Animation01_164: -1376193185
+      RA_Beast_Animation01_17: -811801759
+      RA_Beast_Animation01_18: -1168268797
+      RA_Beast_Animation01_19: -1007688841
+      RA_Beast_Animation01_2: 1054911905
+      RA_Beast_Animation01_20: 1067122354
+      RA_Beast_Animation01_21: -455657954
+      RA_Beast_Animation01_22: -53495041
+      RA_Beast_Animation01_23: -319223271
+      RA_Beast_Animation01_24: -1052289664
+      RA_Beast_Animation01_25: -46063883
+      RA_Beast_Animation01_26: -1865682415
+      RA_Beast_Animation01_27: 1482117396
+      RA_Beast_Animation01_28: 84835185
+      RA_Beast_Animation01_29: 1594903806
+      RA_Beast_Animation01_3: 887183444
+      RA_Beast_Animation01_30: 897459692
+      RA_Beast_Animation01_31: -93857594
+      RA_Beast_Animation01_32: 1121530134
+      RA_Beast_Animation01_33: -1136022180
+      RA_Beast_Animation01_34: -1608118452
+      RA_Beast_Animation01_35: -670478895
+      RA_Beast_Animation01_36: -1146051415
+      RA_Beast_Animation01_37: 1714363328
+      RA_Beast_Animation01_38: -516205640
+      RA_Beast_Animation01_39: 420105701
+      RA_Beast_Animation01_4: -1886596117
+      RA_Beast_Animation01_40: 1083670111
+      RA_Beast_Animation01_41: 1603717257
+      RA_Beast_Animation01_42: 882540760
+      RA_Beast_Animation01_43: 431368409
+      RA_Beast_Animation01_44: 927850107
+      RA_Beast_Animation01_45: -1824600747
+      RA_Beast_Animation01_46: -2141759246
+      RA_Beast_Animation01_47: -1537278669
+      RA_Beast_Animation01_48: 1963797707
+      RA_Beast_Animation01_49: -1609002534
+      RA_Beast_Animation01_5: -2066729075
+      RA_Beast_Animation01_50: 1561991326
+      RA_Beast_Animation01_51: 168171645
+      RA_Beast_Animation01_52: -199773355
+      RA_Beast_Animation01_53: -1151078450
+      RA_Beast_Animation01_54: -112808241
+      RA_Beast_Animation01_55: -1962714673
+      RA_Beast_Animation01_56: 1016444409
+      RA_Beast_Animation01_57: 498468870
+      RA_Beast_Animation01_58: 1461796209
+      RA_Beast_Animation01_59: -1903717408
+      RA_Beast_Animation01_6: 1225044506
+      RA_Beast_Animation01_60: 1761625040
+      RA_Beast_Animation01_61: -1973665201
+      RA_Beast_Animation01_62: 1513217085
+      RA_Beast_Animation01_63: -24912648
+      RA_Beast_Animation01_64: -557618514
+      RA_Beast_Animation01_65: 328095042
+      RA_Beast_Animation01_66: -597149864
+      RA_Beast_Animation01_67: -2117250705
+      RA_Beast_Animation01_68: -1983589409
+      RA_Beast_Animation01_69: 126797249
+      RA_Beast_Animation01_7: -1957015441
+      RA_Beast_Animation01_70: 901116801
+      RA_Beast_Animation01_71: 1597206869
+      RA_Beast_Animation01_72: -1950772337
+      RA_Beast_Animation01_73: -1075410203
+      RA_Beast_Animation01_74: -1691418537
+      RA_Beast_Animation01_75: 772472467
+      RA_Beast_Animation01_76: 1695709194
+      RA_Beast_Animation01_77: -1334059605
+      RA_Beast_Animation01_78: -1376281328
+      RA_Beast_Animation01_79: -729262601
+      RA_Beast_Animation01_8: 750394828
+      RA_Beast_Animation01_80: 1550980750
+      RA_Beast_Animation01_81: -164061419
+      RA_Beast_Animation01_82: -673880893
+      RA_Beast_Animation01_83: 21283778
+      RA_Beast_Animation01_84: 904359836
+      RA_Beast_Animation01_85: -997024892
+      RA_Beast_Animation01_86: -1856744578
+      RA_Beast_Animation01_87: 1003420768
+      RA_Beast_Animation01_88: 676777925
+      RA_Beast_Animation01_89: -951567867
       RA_Beast_Animation01_9: -1217588336
-  spritePackingTag: 
+      RA_Beast_Animation01_90: -1156892948
+      RA_Beast_Animation01_91: 1693911208
+      RA_Beast_Animation01_92: -53150980
+      RA_Beast_Animation01_93: 1936592311
+      RA_Beast_Animation01_94: -405510938
+      RA_Beast_Animation01_95: 1680543812
+      RA_Beast_Animation01_96: 1713401467
+      RA_Beast_Animation01_97: -869604935
+      RA_Beast_Animation01_98: -17084042
+      RA_Beast_Animation01_99: -1526419286
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

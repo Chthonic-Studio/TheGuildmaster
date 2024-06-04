@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d42eaaf369989d4ea8957587f470ef8, type: 3}
+  m_Name: Wizard
+  m_EditorClassIdentifier: 
+  Name: Wizard
+  Description: 
+  Health:
+    minValue: 0
+    maxValue: 0
+  Mana:
+    minValue: 0
+    maxValue: 0
+  Strength:
+    minValue: 0
+    maxValue: 0
+  Agility:
+    minValue: 0
+    maxValue: 0
+  Constitution:
+    minValue: 0
+    maxValue: 0
+  Wisdom:
+    minValue: 0
+    maxValue: 0
+  Intelligence:
+    minValue: 0
+    maxValue: 0
+  Charisma:
+    minValue: 0
+    maxValue: 0
+  FireAffinity:
+    minValue: 0
+    maxValue: 0
+  WaterAffinity:
+    minValue: 0
+    maxValue: 0
+  EarthAffinity:
+    minValue: 0
+    maxValue: 0
+  AirAffinity:
+    minValue: 0
+    maxValue: 0
+  LightAffinity:
+    minValue: 0
+    maxValue: 0
+  DarkAffinity:
+    minValue: 0
+    maxValue: 0
+  ArcaneAffinity:
+    minValue: 0
+    maxValue: 0
+  NatureAffinity:
+    minValue: 0
+    maxValue: 0
+  LightningAffinity:
+    minValue: 0
+    maxValue: 0
+  PsionicAffinity:
+    minValue: 0
+    maxValue: 0
+  FireResistance:
+    minValue: 0
+    maxValue: 0
+  WaterResistance:
+    minValue: 0
+    maxValue: 0
+  EarthResistance:
+    minValue: 0
+    maxValue: 0
+  AirResistance:
+    minValue: 0
+    maxValue: 0
+  LightResistance:
+    minValue: 0
+    maxValue: 0
+  DarkResistance:
+    minValue: 0
+    maxValue: 0
+  ArcaneResistance:
+    minValue: 0
+    maxValue: 0
+  NatureResistance:
+    minValue: 0
+    maxValue: 0
+  LightningResistance:
+    minValue: 0
+    maxValue: 0
+  PsionicResistance:
+    minValue: 0
+    maxValue: 0
+  weight: 10
+  ClassSkills: []
+  requiredPlayerLevel: 1
+  requiredYear: 1
+  requiredTowerFloor: 1
+  recruitmentCost:
+    minValue: 0
+    maxValue: 0
+  maintenanceCost:
+    minValue: 0
+    maxValue: 0

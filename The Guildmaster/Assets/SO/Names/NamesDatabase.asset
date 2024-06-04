@@ -1,0 +1,371 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 448c8c7a97a0b084b9deac52deb72402, type: 3}
+  m_Name: NamesDatabase
+  m_EditorClassIdentifier: 
+  firstNames:
+  - name: Elara
+    gender: 1
+    races:
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+  - name: Lyra
+    gender: 1
+    races:
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: 2ac03b880add7f649a099a0c14005439, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+  - name: Anya
+    gender: 1
+    races:
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: e630e8798d261bf4389cec2de25dfc1c, type: 2}
+  - name: Cora
+    gender: 1
+    races:
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 7e51d85b04719b74d821f8883997f4a1, type: 2}
+    - {fileID: 11400000, guid: ed6393ac8fc13c440b8e970c057b0c6c, type: 2}
+  - name: Isolde
+    gender: 1
+    races:
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: 9dec4a7336cd1384d8941f069999a77d, type: 2}
+    - {fileID: 11400000, guid: 7e51d85b04719b74d821f8883997f4a1, type: 2}
+    - {fileID: 11400000, guid: ed6393ac8fc13c440b8e970c057b0c6c, type: 2}
+    - {fileID: 11400000, guid: e630e8798d261bf4389cec2de25dfc1c, type: 2}
+    - {fileID: 11400000, guid: e22b34fd6f33dd341b4b41d19bc0f4f0, type: 2}
+  - name: Amara
+    gender: 1
+    races:
+    - {fileID: 11400000, guid: 2ac03b880add7f649a099a0c14005439, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 9dec4a7336cd1384d8941f069999a77d, type: 2}
+  - name: Beatrix
+    gender: 1
+    races:
+    - {fileID: 11400000, guid: ed6393ac8fc13c440b8e970c057b0c6c, type: 2}
+    - {fileID: 11400000, guid: e630e8798d261bf4389cec2de25dfc1c, type: 2}
+    - {fileID: 11400000, guid: 7e51d85b04719b74d821f8883997f4a1, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+  - name: Sylvie
+    gender: 1
+    races:
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 2ac03b880add7f649a099a0c14005439, type: 2}
+  - name: Fiona
+    gender: 1
+    races:
+    - {fileID: 11400000, guid: 7e51d85b04719b74d821f8883997f4a1, type: 2}
+    - {fileID: 11400000, guid: 9dec4a7336cd1384d8941f069999a77d, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: ed6393ac8fc13c440b8e970c057b0c6c, type: 2}
+    - {fileID: 11400000, guid: e630e8798d261bf4389cec2de25dfc1c, type: 2}
+    - {fileID: 11400000, guid: e22b34fd6f33dd341b4b41d19bc0f4f0, type: 2}
+  - name: Roderick
+    gender: 0
+    races:
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+  - name: Gareth
+    gender: 0
+    races:
+    - {fileID: 11400000, guid: 7e51d85b04719b74d821f8883997f4a1, type: 2}
+    - {fileID: 11400000, guid: 9dec4a7336cd1384d8941f069999a77d, type: 2}
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: e22b34fd6f33dd341b4b41d19bc0f4f0, type: 2}
+    - {fileID: 11400000, guid: ed6393ac8fc13c440b8e970c057b0c6c, type: 2}
+    - {fileID: 11400000, guid: e630e8798d261bf4389cec2de25dfc1c, type: 2}
+  - name: Finn
+    gender: 0
+    races:
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+  - name: Edgar
+    gender: 0
+    races:
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+  - name: Cedric
+    gender: 0
+    races:
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 2ac03b880add7f649a099a0c14005439, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+  - name: Kieran
+    gender: 0
+    races:
+    - {fileID: 11400000, guid: 7e51d85b04719b74d821f8883997f4a1, type: 2}
+    - {fileID: 11400000, guid: 9dec4a7336cd1384d8941f069999a77d, type: 2}
+    - {fileID: 11400000, guid: e22b34fd6f33dd341b4b41d19bc0f4f0, type: 2}
+    - {fileID: 11400000, guid: ed6393ac8fc13c440b8e970c057b0c6c, type: 2}
+    - {fileID: 11400000, guid: e630e8798d261bf4389cec2de25dfc1c, type: 2}
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+  - name: Duncan
+    gender: 0
+    races:
+    - {fileID: 11400000, guid: 9dec4a7336cd1384d8941f069999a77d, type: 2}
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+  - name: Theodric
+    gender: 0
+    races:
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+  - name: Alistair
+    gender: 0
+    races:
+    - {fileID: 11400000, guid: 7e51d85b04719b74d821f8883997f4a1, type: 2}
+    - {fileID: 11400000, guid: 9dec4a7336cd1384d8941f069999a77d, type: 2}
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 2ac03b880add7f649a099a0c14005439, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: e22b34fd6f33dd341b4b41d19bc0f4f0, type: 2}
+    - {fileID: 11400000, guid: ed6393ac8fc13c440b8e970c057b0c6c, type: 2}
+    - {fileID: 11400000, guid: e630e8798d261bf4389cec2de25dfc1c, type: 2}
+  - name: Elias
+    gender: 0
+    races:
+    - {fileID: 11400000, guid: 7e51d85b04719b74d821f8883997f4a1, type: 2}
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: 9dec4a7336cd1384d8941f069999a77d, type: 2}
+    - {fileID: 11400000, guid: ed6393ac8fc13c440b8e970c057b0c6c, type: 2}
+    - {fileID: 11400000, guid: e630e8798d261bf4389cec2de25dfc1c, type: 2}
+  - name: Rowan
+    gender: 2
+    races:
+    - {fileID: 11400000, guid: 7e51d85b04719b74d821f8883997f4a1, type: 2}
+    - {fileID: 11400000, guid: 9dec4a7336cd1384d8941f069999a77d, type: 2}
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 2ac03b880add7f649a099a0c14005439, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: e22b34fd6f33dd341b4b41d19bc0f4f0, type: 2}
+    - {fileID: 11400000, guid: ed6393ac8fc13c440b8e970c057b0c6c, type: 2}
+    - {fileID: 11400000, guid: e630e8798d261bf4389cec2de25dfc1c, type: 2}
+  - name: Jaimie
+    gender: 2
+    races:
+    - {fileID: 11400000, guid: 7e51d85b04719b74d821f8883997f4a1, type: 2}
+    - {fileID: 11400000, guid: 9dec4a7336cd1384d8941f069999a77d, type: 2}
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 2ac03b880add7f649a099a0c14005439, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: e22b34fd6f33dd341b4b41d19bc0f4f0, type: 2}
+    - {fileID: 11400000, guid: ed6393ac8fc13c440b8e970c057b0c6c, type: 2}
+    - {fileID: 11400000, guid: e630e8798d261bf4389cec2de25dfc1c, type: 2}
+  - name: Wren
+    gender: 2
+    races:
+    - {fileID: 11400000, guid: 7e51d85b04719b74d821f8883997f4a1, type: 2}
+    - {fileID: 11400000, guid: 9dec4a7336cd1384d8941f069999a77d, type: 2}
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 2ac03b880add7f649a099a0c14005439, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: e22b34fd6f33dd341b4b41d19bc0f4f0, type: 2}
+    - {fileID: 11400000, guid: ed6393ac8fc13c440b8e970c057b0c6c, type: 2}
+    - {fileID: 11400000, guid: e630e8798d261bf4389cec2de25dfc1c, type: 2}
+  - name: Remy
+    gender: 2
+    races:
+    - {fileID: 11400000, guid: 7e51d85b04719b74d821f8883997f4a1, type: 2}
+    - {fileID: 11400000, guid: 9dec4a7336cd1384d8941f069999a77d, type: 2}
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 2ac03b880add7f649a099a0c14005439, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: e22b34fd6f33dd341b4b41d19bc0f4f0, type: 2}
+    - {fileID: 11400000, guid: ed6393ac8fc13c440b8e970c057b0c6c, type: 2}
+    - {fileID: 11400000, guid: e630e8798d261bf4389cec2de25dfc1c, type: 2}
+  - name: Aspen
+    gender: 2
+    races:
+    - {fileID: 11400000, guid: 7e51d85b04719b74d821f8883997f4a1, type: 2}
+    - {fileID: 11400000, guid: 9dec4a7336cd1384d8941f069999a77d, type: 2}
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 2ac03b880add7f649a099a0c14005439, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: e22b34fd6f33dd341b4b41d19bc0f4f0, type: 2}
+    - {fileID: 11400000, guid: ed6393ac8fc13c440b8e970c057b0c6c, type: 2}
+    - {fileID: 11400000, guid: e630e8798d261bf4389cec2de25dfc1c, type: 2}
+  lastNames:
+  - name: Miller
+    races:
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+  - name: Fletcher
+    races:
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+  - name: Blackstone
+    races:
+    - {fileID: 11400000, guid: 9dec4a7336cd1384d8941f069999a77d, type: 2}
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+  - name: Wright
+    races:
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+  - name: Davies
+    races:
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+  - name: Thorne
+    races:
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+  - name: Weaver
+    races:
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+  - name: Reed
+    races:
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+  - name: Hill
+    races:
+    - {fileID: 11400000, guid: 85cde32cf2bf1314fb81b791f5c44eed, type: 2}
+    - {fileID: 11400000, guid: 26648d3303eb6de45a18d725fdee81be, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 96ac7bb3ef2b26841a5394acda27ca8f, type: 2}
+    - {fileID: 11400000, guid: fad4b288ea9006b439defb8787b4f3ec, type: 2}
+  - name: Moonshadow
+    races:
+    - {fileID: 11400000, guid: 2ac03b880add7f649a099a0c14005439, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+  - name: Everbloom
+    races:
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 2ac03b880add7f649a099a0c14005439, type: 2}
+  - name: Silverblade
+    races:
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 2ac03b880add7f649a099a0c14005439, type: 2}
+  - name: Starbreeze
+    races:
+    - {fileID: 11400000, guid: 2ac03b880add7f649a099a0c14005439, type: 2}
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+  - name: Whispersong
+    races:
+    - {fileID: 11400000, guid: c30ed2b0e8c63534a96eacb20a23e9d6, type: 2}
+    - {fileID: 11400000, guid: 2ac03b880add7f649a099a0c14005439, type: 2}
+  - name: Coralreef
+    races:
+    - {fileID: 11400000, guid: e22b34fd6f33dd341b4b41d19bc0f4f0, type: 2}
+  - name: Deepwater
+    races:
+    - {fileID: 11400000, guid: e22b34fd6f33dd341b4b41d19bc0f4f0, type: 2}
+  - name: Tideborn
+    races:
+    - {fileID: 11400000, guid: e22b34fd6f33dd341b4b41d19bc0f4f0, type: 2}
+  - name: Cinderscale
+    races:
+    - {fileID: 11400000, guid: 9dec4a7336cd1384d8941f069999a77d, type: 2}
+  - name: Stormbringer
+    races:
+    - {fileID: 11400000, guid: 9dec4a7336cd1384d8941f069999a77d, type: 2}
+  - name: Frostwind
+    races:
+    - {fileID: 11400000, guid: 9dec4a7336cd1384d8941f069999a77d, type: 2}
+  - name: of the Wildheart
+    races:
+    - {fileID: 11400000, guid: 7e51d85b04719b74d821f8883997f4a1, type: 2}
+    - {fileID: 11400000, guid: ed6393ac8fc13c440b8e970c057b0c6c, type: 2}
+    - {fileID: 11400000, guid: e630e8798d261bf4389cec2de25dfc1c, type: 2}
+  - name: of the Moonshadow
+    races:
+    - {fileID: 11400000, guid: 7e51d85b04719b74d821f8883997f4a1, type: 2}
+    - {fileID: 11400000, guid: ed6393ac8fc13c440b8e970c057b0c6c, type: 2}
+    - {fileID: 11400000, guid: e630e8798d261bf4389cec2de25dfc1c, type: 2}
+  - name: of the Fangbreaker
+    races:
+    - {fileID: 11400000, guid: 7e51d85b04719b74d821f8883997f4a1, type: 2}
+    - {fileID: 11400000, guid: ed6393ac8fc13c440b8e970c057b0c6c, type: 2}
+    - {fileID: 11400000, guid: e630e8798d261bf4389cec2de25dfc1c, type: 2}
+  - name: of the Stormhowl
+    races:
+    - {fileID: 11400000, guid: 7e51d85b04719b74d821f8883997f4a1, type: 2}
+    - {fileID: 11400000, guid: ed6393ac8fc13c440b8e970c057b0c6c, type: 2}
+    - {fileID: 11400000, guid: e630e8798d261bf4389cec2de25dfc1c, type: 2}
+  - name: of th Bloodclaw
+    races:
+    - {fileID: 11400000, guid: 7e51d85b04719b74d821f8883997f4a1, type: 2}
+    - {fileID: 11400000, guid: ed6393ac8fc13c440b8e970c057b0c6c, type: 2}
+    - {fileID: 11400000, guid: e630e8798d261bf4389cec2de25dfc1c, type: 2}
