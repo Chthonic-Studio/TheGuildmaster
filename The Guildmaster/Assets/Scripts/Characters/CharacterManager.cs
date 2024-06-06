@@ -20,6 +20,12 @@ public class CharacterManager : MonoBehaviour
     //All possible traits
     [SerializeField] public List<TraitSO> allTraits;
 
+    //All possible personalities
+    [SerializeField] public List<PersonalitySO> allPersonalities;
+
+    //All possible backstories
+    [SerializeField] public List<BackstorySO> allBackstories;
+
     // Start is called before the first frame update
     private void Start()
     {

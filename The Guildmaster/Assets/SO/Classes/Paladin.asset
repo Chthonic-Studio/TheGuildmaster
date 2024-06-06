@@ -15,29 +15,29 @@ MonoBehaviour:
   Name: Paladin
   Description: 
   Health:
-    minValue: 0
-    maxValue: 0
+    minValue: 18
+    maxValue: 25
   Mana:
-    minValue: 0
-    maxValue: 0
+    minValue: 8
+    maxValue: 12
   Strength:
-    minValue: 0
-    maxValue: 0
+    minValue: 9
+    maxValue: 13
   Agility:
-    minValue: 0
-    maxValue: 0
+    minValue: 5
+    maxValue: 10
   Constitution:
-    minValue: 0
-    maxValue: 0
+    minValue: 10
+    maxValue: 14
   Wisdom:
-    minValue: 0
-    maxValue: 0
+    minValue: 5
+    maxValue: 10
   Intelligence:
-    minValue: 0
-    maxValue: 0
+    minValue: 5
+    maxValue: 10
   Charisma:
-    minValue: 0
-    maxValue: 0
+    minValue: 10
+    maxValue: 14
   FireAffinity:
     minValue: 0
     maxValue: 0

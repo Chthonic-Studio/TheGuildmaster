@@ -15,29 +15,29 @@ MonoBehaviour:
   Name: Archer
   Description: 
   Health:
-    minValue: 0
-    maxValue: 0
+    minValue: 12
+    maxValue: 18
   Mana:
-    minValue: 0
-    maxValue: 0
+    minValue: 5
+    maxValue: 10
   Strength:
-    minValue: 0
-    maxValue: 0
+    minValue: 7
+    maxValue: 12
   Agility:
-    minValue: 0
-    maxValue: 0
+    minValue: 10
+    maxValue: 14
   Constitution:
-    minValue: 0
-    maxValue: 0
+    minValue: 7
+    maxValue: 12
   Wisdom:
-    minValue: 0
-    maxValue: 0
+    minValue: 5
+    maxValue: 10
   Intelligence:
-    minValue: 0
-    maxValue: 0
+    minValue: 7
+    maxValue: 12
   Charisma:
-    minValue: 0
-    maxValue: 0
+    minValue: 5
+    maxValue: 12
   FireAffinity:
     minValue: 0
     maxValue: 0

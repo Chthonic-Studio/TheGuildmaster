@@ -15,29 +15,29 @@ MonoBehaviour:
   Name: Wizard
   Description: 
   Health:
-    minValue: 0
-    maxValue: 0
+    minValue: 10
+    maxValue: 15
   Mana:
-    minValue: 0
-    maxValue: 0
+    minValue: 18
+    maxValue: 25
   Strength:
-    minValue: 0
-    maxValue: 0
+    minValue: 5
+    maxValue: 10
   Agility:
-    minValue: 0
-    maxValue: 0
+    minValue: 5
+    maxValue: 10
   Constitution:
-    minValue: 0
-    maxValue: 0
+    minValue: 5
+    maxValue: 10
   Wisdom:
-    minValue: 0
-    maxValue: 0
+    minValue: 7
+    maxValue: 12
   Intelligence:
-    minValue: 0
-    maxValue: 0
+    minValue: 12
+    maxValue: 16
   Charisma:
-    minValue: 0
-    maxValue: 0
+    minValue: 7
+    maxValue: 12
   FireAffinity:
     minValue: 0
     maxValue: 0

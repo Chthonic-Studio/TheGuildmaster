@@ -15,189 +15,189 @@ MonoBehaviour:
   Name: Tigerkin
   Description: A tigerkin
   LifeExpentancy:
-    minValue: 0
-    maxValue: 0
+    minValue: 90
+    maxValue: 110
   Health:
-    minValue: 0
-    maxValue: 0
+    minValue: 1
+    maxValue: 3
   Mana:
-    minValue: 0
-    maxValue: 0
+    minValue: -3
+    maxValue: -1
   Strength:
-    minValue: 0
-    maxValue: 0
+    minValue: 1
+    maxValue: 3
   Agility:
-    minValue: 0
-    maxValue: 0
+    minValue: 1
+    maxValue: 2
   Constitution:
     minValue: 0
     maxValue: 0
   Wisdom:
-    minValue: 0
+    minValue: -1
     maxValue: 0
   Intelligence:
-    minValue: 0
+    minValue: -1
     maxValue: 0
   Charisma:
     minValue: 0
     maxValue: 0
   Adaptability:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Tenacity:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Loyalty:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Ambition:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Good:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Evil:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Leadership:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Willpower:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Luck:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Perception:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Morale:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   FireAffinity:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   WaterAffinity:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   EarthAffinity:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   AirAffinity:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   LightAffinity:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   DarkAffinity:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   ArcaneAffinity:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   NatureAffinity:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   PsionicAffinity:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   LightningAffinity:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   FireResistance:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   WaterResistance:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   EarthResistance:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   AirResistance:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   LightResistance:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   DarkResistance:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   ArcaneResistance:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   NatureResistance:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   LightningResistance:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   PsionicResistance:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Sociability:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Confidence:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Empathy:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Humor:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Curiosity:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Creativity:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Discipline:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Patience:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Honesty:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Bravery:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Persuasion:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Intimidation:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Deception:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Diplomacy:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Aggression:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Resourcefulness:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Cunning:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Integrity:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   Humility:
-    minValue: 0
-    maxValue: 0
+    minValue: -50
+    maxValue: 50
   weight: 0
   requiredPlayerLevel: 0
   requiredYear: 0
   requiredTowerFloor: 0
   recruitmentCost:
-    minValue: 0
-    maxValue: 0
+    minValue: 20
+    maxValue: 50
   maintenanceCost:
-    minValue: 0
-    maxValue: 0
+    minValue: 2
+    maxValue: 5

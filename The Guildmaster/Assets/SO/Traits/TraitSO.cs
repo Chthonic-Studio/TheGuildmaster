@@ -205,6 +205,7 @@ public class TraitSO : BaseSO
                 return Humility;
             
             default:
+                Debug.LogError($"Unknown stat {stat}");
                 return 0;
         }
     }

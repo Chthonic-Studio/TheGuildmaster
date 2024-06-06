@@ -12,32 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d42eaaf369989d4ea8957587f470ef8, type: 3}
   m_Name: Priest
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Priest
   Description: 
   Health:
-    minValue: 0
-    maxValue: 0
+    minValue: 10
+    maxValue: 15
   Mana:
-    minValue: 0
-    maxValue: 0
+    minValue: 12
+    maxValue: 17
   Strength:
-    minValue: 0
-    maxValue: 0
+    minValue: 7
+    maxValue: 12
   Agility:
-    minValue: 0
-    maxValue: 0
+    minValue: 5
+    maxValue: 10
   Constitution:
-    minValue: 0
-    maxValue: 0
+    minValue: 7
+    maxValue: 12
   Wisdom:
-    minValue: 0
-    maxValue: 0
+    minValue: 10
+    maxValue: 14
   Intelligence:
-    minValue: 0
-    maxValue: 0
+    minValue: 7
+    maxValue: 12
   Charisma:
-    minValue: 0
-    maxValue: 0
+    minValue: 7
+    maxValue: 12
   FireAffinity:
     minValue: 0
     maxValue: 0

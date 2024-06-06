@@ -15,29 +15,29 @@ MonoBehaviour:
   Name: Sorcerer
   Description: 
   Health:
-    minValue: 0
-    maxValue: 0
+    minValue: 12
+    maxValue: 18
   Mana:
-    minValue: 0
-    maxValue: 0
+    minValue: 12
+    maxValue: 18
   Strength:
-    minValue: 0
-    maxValue: 0
+    minValue: 5
+    maxValue: 10
   Agility:
-    minValue: 0
-    maxValue: 0
+    minValue: 5
+    maxValue: 10
   Constitution:
-    minValue: 0
-    maxValue: 0
+    minValue: 7
+    maxValue: 12
   Wisdom:
-    minValue: 0
-    maxValue: 0
+    minValue: 7
+    maxValue: 12
   Intelligence:
-    minValue: 0
-    maxValue: 0
+    minValue: 10
+    maxValue: 14
   Charisma:
-    minValue: 0
-    maxValue: 0
+    minValue: 10
+    maxValue: 14
   FireAffinity:
     minValue: 0
     maxValue: 0

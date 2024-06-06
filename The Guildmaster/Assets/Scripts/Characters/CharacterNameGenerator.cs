@@ -29,7 +29,10 @@ public class NameGenerator
 
     private static List<string> GetFirstNamesForGenderAndRace(string gender, RaceSO race)
     {
-        if (!Enum.TryParse(gender, out NamesDatabase.Gender genderEnum))
+        // Remove spaces from the gender string before parsing
+        string sanitizedGender = gender.Replace(" ", "");
+        
+        if (!Enum.TryParse(sanitizedGender, out NamesDatabase.Gender genderEnum))
         {
             throw new ArgumentException($"Invalid gender value: {gender}");
         }
@@ -39,7 +42,7 @@ public class NameGenerator
             .Select(entry => entry.name)
             .ToList();
     }
-
+    
     private static List<string> GetLastNamesForRace(RaceSO race)
     {
         return namesDatabase.lastNames

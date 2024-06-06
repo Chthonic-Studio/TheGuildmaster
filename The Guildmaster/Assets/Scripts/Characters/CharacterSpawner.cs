@@ -51,34 +51,54 @@ public class CharacterSpawner
     public static List<TraitSO> GetCharacterTraits(CharacterManager characterManager, int numTraits)
     {
         List<TraitSO> selectedTraits = new List<TraitSO>();
+        List<TraitSO> possibleTraits = new List<TraitSO>(characterManager.allTraits);
 
         for (int i = 0; i < numTraits; i++)
         {
-            float totalWeight = characterManager.allTraits.Sum(trait => trait.weight);
-            float randomWeightPoint = UnityEngine.Random.Range(0, totalWeight);
-
-            foreach (TraitSO trait in characterManager.allTraits)
+            float totalWeight = 0;
+            foreach (TraitSO trait in possibleTraits)
             {
-                if (randomWeightPoint < trait.weight)
+                totalWeight += trait.weight;
+            }
+
+            float randomValue = UnityEngine.Random.Range(0, totalWeight);
+
+            float cumulativeWeight = 0;
+            TraitSO selectedTrait = null;
+            foreach (TraitSO trait in possibleTraits)
+            {
+                cumulativeWeight += trait.weight;
+                if (randomValue < cumulativeWeight)
                 {
-                    selectedTraits.Add(trait);
+                    selectedTrait = trait;
                     break;
                 }
-                randomWeightPoint -= trait.weight;
             }
-        }
 
-        if (selectedTraits.Count < numTraits)
-        {
-            throw new InvalidOperationException("Not enough traits available to select");
+            if (selectedTrait!= null)
+            {
+                selectedTraits.Add(selectedTrait);
+                possibleTraits.Remove(selectedTrait); // Remove the selected trait from the possible traits
+            }
         }
 
         return selectedTraits;
     }
-
     /////// PERSONALITY SELECTION ///////
 
+    public static PersonalitySO GetCharacterPersonality(CharacterManager characterManager)
+    {
+        var randomIndex = UnityEngine.Random.Range(0, characterManager.allPersonalities.Count);
+        return characterManager.allPersonalities[randomIndex];
+    }
+
     /////// BACKSTORY SELECTION ///////
+
+    public static BackstorySO GetCharacterBackstory(CharacterManager characterManager)
+    {
+        var randomIndex = UnityEngine.Random.Range(0, characterManager.allBackstories.Count);
+        return characterManager.allBackstories[randomIndex];
+    }
 
     /////// NAME SELECTION ///////
 
@@ -102,6 +122,8 @@ public class CharacterSpawner
         (string firstName, string lastName) = GetCharacterName(gender, race);
         ClassSO selectedClass = GetCharacterClass(characterManager);
         List<TraitSO> selectedTraits = GetCharacterTraits(characterManager, 3);
+        PersonalitySO selectedPersonality = GetCharacterPersonality(characterManager);
+        BackstorySO selectedBackstory = GetCharacterBackstory(characterManager);
 
         // Instantiate a new GameObject from the prefab
         GameObject newCharacter = GameObject.Instantiate(characterManager.characterPrefab);
@@ -115,6 +137,9 @@ public class CharacterSpawner
         characterProfile.characterFirstName = firstName;
         characterProfile.characterLastName = lastName;
         characterProfile.selectedClass = selectedClass;
+        characterProfile.selectedTraits = selectedTraits;
+        characterProfile.selectedPersonality = selectedPersonality;
+        characterProfile.selectedBackstory = selectedBackstory;
 
         // Generate a unique alphanumeric ID for the character
         characterProfile.characterID = $"{nextId++}-{Guid.NewGuid()}";
