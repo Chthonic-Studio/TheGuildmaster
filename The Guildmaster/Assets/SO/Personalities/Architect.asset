@@ -26,21 +26,21 @@ MonoBehaviour:
   Perception: 0
   Morale: 0
   Sociability: 0
-  Confidence: 0
+  Confidence: 20
   Empathy: 0
   Humor: 0
-  Curiosity: 0
-  Creativity: 0
+  Curiosity: 20
+  Creativity: 30
   Discipline: 0
-  Patience: 0
-  Honesty: 0
+  Patience: 20
+  Honesty: 20
   Bravery: 0
   Persuasion: 0
   Intimidation: 0
   Deception: 0
   Diplomacy: 0
   Aggression: 0
-  Resourcefulness: 0
+  Resourcefulness: 20
   Cunning: 0
   Integrity: 0
   Humility: 0

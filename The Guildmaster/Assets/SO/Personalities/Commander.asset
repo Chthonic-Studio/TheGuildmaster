@@ -17,16 +17,16 @@ MonoBehaviour:
   Adaptability: 0
   Tenacity: 0
   Loyalty: 0
-  Ambition: 0
+  Ambition: 20
   Good: 0
   Evil: 0
-  Leadership: 0
+  Leadership: 30
   Willpower: 0
   Luck: 0
   Perception: 0
   Morale: 0
   Sociability: 0
-  Confidence: 0
+  Confidence: 20
   Empathy: 0
   Humor: 0
   Curiosity: 0
@@ -34,8 +34,8 @@ MonoBehaviour:
   Discipline: 0
   Patience: 0
   Honesty: 0
-  Bravery: 0
-  Persuasion: 0
+  Bravery: 20
+  Persuasion: 20
   Intimidation: 0
   Deception: 0
   Diplomacy: 0

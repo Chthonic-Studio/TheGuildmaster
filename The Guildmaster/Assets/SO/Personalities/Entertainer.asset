@@ -25,11 +25,11 @@ MonoBehaviour:
   Luck: 0
   Perception: 0
   Morale: 0
-  Sociability: 0
+  Sociability: 20
   Confidence: 0
   Empathy: 0
-  Humor: 0
-  Curiosity: 0
+  Humor: 20
+  Curiosity: 20
   Creativity: 0
   Discipline: 0
   Patience: 0

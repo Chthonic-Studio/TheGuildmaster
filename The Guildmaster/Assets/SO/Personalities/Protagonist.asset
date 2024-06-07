@@ -16,29 +16,29 @@ MonoBehaviour:
   TraitDescription: 
   Adaptability: 0
   Tenacity: 0
-  Loyalty: 0
+  Loyalty: 30
   Ambition: 0
   Good: 0
   Evil: 0
-  Leadership: 0
+  Leadership: 30
   Willpower: 0
   Luck: 0
   Perception: 0
   Morale: 0
-  Sociability: 0
+  Sociability: 20
   Confidence: 0
   Empathy: 0
   Humor: 0
   Curiosity: 0
-  Creativity: 0
+  Creativity: 30
   Discipline: 0
   Patience: 0
   Honesty: 0
   Bravery: 0
-  Persuasion: 0
+  Persuasion: 30
   Intimidation: 0
   Deception: 0
-  Diplomacy: 0
+  Diplomacy: 20
   Aggression: 0
   Resourcefulness: 0
   Cunning: 0

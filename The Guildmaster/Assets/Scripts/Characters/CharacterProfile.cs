@@ -186,6 +186,10 @@ public class CharacterProfile : MonoBehaviour
         // Set the name of the GameObject
         gameObject.name = characterFirstName + " " + characterLastName + " " + characterID;
 
+        // Initialize Level and Experience
+        level = 1;
+        experience = 0;
+        
         // Calculate initial stats
         CalculateStats();
     }
@@ -303,6 +307,24 @@ public class CharacterProfile : MonoBehaviour
         return finalValue;
     }
 
+    public void AddExperience(int amount)
+    {
+        int newExperience = experience + amount;
 
+        while (newExperience >= level * 100)
+        {
+            int excessExperience = newExperience - level * 100;
+            LevelUp();
+            newExperience = excessExperience;
+        }
+
+        // If the experience is not enough to level up, add it to the value already stored in the CharacterProfile
+        experience += newExperience;
+    }
+
+    private void LevelUp()
+    {
+        level++;
+    }
 
 }

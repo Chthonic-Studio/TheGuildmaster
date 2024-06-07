@@ -15,23 +15,23 @@ MonoBehaviour:
   TraitName: Executive
   TraitDescription: 
   Adaptability: 0
-  Tenacity: 0
+  Tenacity: 20
   Loyalty: 0
-  Ambition: 0
+  Ambition: 20
   Good: 0
   Evil: 0
-  Leadership: 0
+  Leadership: 30
   Willpower: 0
   Luck: 0
   Perception: 0
   Morale: 0
   Sociability: 0
-  Confidence: 0
+  Confidence: 20
   Empathy: 0
   Humor: 0
   Curiosity: 0
   Creativity: 0
-  Discipline: 0
+  Discipline: 20
   Patience: 0
   Honesty: 0
   Bravery: 0

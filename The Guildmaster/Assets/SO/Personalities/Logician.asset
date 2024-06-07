@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TraitName: Logician
   TraitDescription: 
-  Adaptability: 0
+  Adaptability: 20
   Tenacity: 0
   Loyalty: 0
   Ambition: 0
@@ -29,18 +29,18 @@ MonoBehaviour:
   Confidence: 0
   Empathy: 0
   Humor: 0
-  Curiosity: 0
-  Creativity: 0
+  Curiosity: 20
+  Creativity: 30
   Discipline: 0
   Patience: 0
-  Honesty: 0
+  Honesty: 20
   Bravery: 0
   Persuasion: 0
   Intimidation: 0
   Deception: 0
   Diplomacy: 0
   Aggression: 0
-  Resourcefulness: 0
+  Resourcefulness: 20
   Cunning: 0
   Integrity: 0
   Humility: 0

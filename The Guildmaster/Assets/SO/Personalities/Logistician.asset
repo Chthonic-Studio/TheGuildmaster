@@ -15,7 +15,7 @@ MonoBehaviour:
   TraitName: Logistician
   TraitDescription: 
   Adaptability: 0
-  Tenacity: 0
+  Tenacity: 20
   Loyalty: 0
   Ambition: 0
   Good: 0
@@ -31,8 +31,8 @@ MonoBehaviour:
   Humor: 0
   Curiosity: 0
   Creativity: 0
-  Discipline: 0
-  Patience: 0
+  Discipline: 20
+  Patience: 20
   Honesty: 0
   Bravery: 0
   Persuasion: 0

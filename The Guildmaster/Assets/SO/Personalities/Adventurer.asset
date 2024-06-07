@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TraitName: Adventurer
   TraitDescription: 
-  Adaptability: 0
-  Tenacity: 0
+  Adaptability: 20
+  Tenacity: 20
   Loyalty: 0
   Ambition: 0
   Good: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
   Luck: 0
   Perception: 0
   Morale: 0
-  Sociability: 0
+  Sociability: 20
   Confidence: 0
   Empathy: 0
   Humor: 0
@@ -34,10 +34,10 @@ MonoBehaviour:
   Discipline: 0
   Patience: 0
   Honesty: 0
-  Bravery: 0
+  Bravery: 20
   Persuasion: 0
-  Intimidation: 0
-  Deception: 0
+  Intimidation: -20
+  Deception: -20
   Diplomacy: 0
   Aggression: 0
   Resourcefulness: 0
