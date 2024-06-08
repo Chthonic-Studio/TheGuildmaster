@@ -27,6 +27,10 @@ public class CharacterProfile : MonoBehaviour
     [Header("Character Statuses")]
     [SerializeField] public List<StatusSO> CharacterStatuses = new List<StatusSO>();
 
+    [Header("Character Inventory")]
+    [SerializeField] public List<ItemSO> CharacterInventory = new List<ItemSO>();
+    [SerializeField] public int Gold;
+
     // Character Main Stats
     [Header("Character Main Stats")]
     [SerializeField] public int Health;

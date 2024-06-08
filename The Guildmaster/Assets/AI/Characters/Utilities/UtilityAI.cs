@@ -20,6 +20,6 @@ public class UtilityAI
     {
         // Implement your custom formula here
         // For example:
-        UtilityValue = Desire * Need;
+        UtilityValue = ((Desire + Need) * 0.7f) + UnityEngine.Random.Range(0f, 15f);
     }
 }
