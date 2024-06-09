@@ -1,12 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class characterTownAI : MonoBehaviour
 {
     public CharacterProfile character;
     private Dictionary<string, UtilityAI> utilities;
+    private enum State
+    {
+        Deciding,
+        Idle,
+        Walking,
+        LookingForAction,
+        Interacting
+    }
 
+    [SerializeField] private State state;
+    private bool isActive = false;
+    
     [Header("Utility Variables")]
     [SerializeField] private float stress;
     [SerializeField] private float comfort;
@@ -125,16 +137,43 @@ public class characterTownAI : MonoBehaviour
     
     #endregion
 
+    #region Action Script References
+    // Creativity Scripts //
+    private ComposeMusic composeMusic;
+    private CraftItem craftItem;
+    private Perform perform;
+    private Sculpt sculpt;
+    private Sing sing;
+    private Poetry poetry;
+    private Playwriting playwriting;
+    private Painting painting;
+    private Dancing dancing;
+    private Gardening gardening;
+    private Cooking cooking;
+    // Exploration Scripts //
 
-    private enum State
-    {
-        Idle,
-        Walking,
-        Interacting
-    }
+    // Helping Scripts //
 
-    private State state;
+    // Relaxation Scripts //
 
+    // Rest Scripts //
+
+    // Shopping Scripts //
+
+    // Training Scripts //
+
+    // Socialization Scripts //
+
+    // Spirituality Scripts //
+
+    // Entertainment Scripts //
+
+    // Studying Scripts //
+
+    // Villainy Scripts //
+    
+
+    #endregion
     // Update is called once per frame
     void Start()
     {
@@ -256,13 +295,100 @@ public class characterTownAI : MonoBehaviour
 
         #endregion
 
+
+        composeMusic = new ComposeMusic(this, character);
+
         CalculateUtilityVariables();
         CalculateMainUtilityValues();
     }
 
     void Update()
     {
+        CheckState();
 
+    }
+
+    private void CheckState()
+    {
+        if (!isActive)
+        {
+            
+            float actionOdds = 0.7f;
+
+            float random = UnityEngine.Random.value;
+
+            if (random <= actionOdds)        
+            
+            {
+                StopIdle();
+
+                state = State.LookingForAction;
+
+                CalculateMainUtilityValues();
+                float maxUtility = Mathf.Max(creativityUtilityValue, explorationUtilityValue, helpingUtilityValue, relaxationUtilityValue, restUtilityValue, shoppingUtilityValue, trainingUtilityValue, socializationUtilityValue, spiritualityUtilityValue, entertainmentUtilityValue, studyingUtilityValue, villainyUtilityValue);
+                
+                if (maxUtility == creativityUtilityValue)
+                {
+                    CreativityActionSelector();
+                }
+                else if (maxUtility == explorationUtilityValue)
+                {
+                    ExplorationActionSelector();
+                }
+                else if (maxUtility == helpingUtilityValue)
+                {
+                    HelpingActionSelector();
+                }
+                else if (maxUtility == relaxationUtilityValue)
+                {
+                    RelaxationActionSelector();
+                }
+                else if (maxUtility == restUtilityValue)
+                {
+                    RestActionSelector();
+                }
+                else if (maxUtility == shoppingUtilityValue)
+                {
+                    ShoppingActionSelector();
+                }
+                else if (maxUtility == trainingUtilityValue)
+                {
+                    TrainingActionSelector();
+                }
+                else if (maxUtility == socializationUtilityValue)
+                {
+                    SocializationActionSelector();
+                }
+                else if (maxUtility == spiritualityUtilityValue)
+                {
+                    SpiritualityActionSelector();
+                }
+                else if (maxUtility == entertainmentUtilityValue)
+                {
+                    EntertainmentActionSelector();
+                }
+                else if (maxUtility == studyingUtilityValue)
+                {
+                    StudyingActionSelector();
+                }
+                else if (maxUtility == villainyUtilityValue)
+                {
+                    VillainyActionSelector();
+            }
+
+            else
+            {
+                Idle();
+            }
+        }
+
+        if (isActive)
+        {
+            state = State.Interacting;
+            return;
+        }
+
+    }
     }
 
     private void CalculateMainUtilityValues()
@@ -282,9 +408,44 @@ public class characterTownAI : MonoBehaviour
 
     }
 
+
+
+    private Coroutine idleRoutine;
+
     private void Idle()
     {
-        // Implement Idle behavior here
+        idleRoutine = StartCoroutine(IdleRoutine());
+        isActive = true;
+        state = State.Idle;
+    }
+
+    private IEnumerator IdleRoutine()
+    {
+        while (true)
+        {
+            var randomDirection = Random.insideUnitCircle.normalized * 10; 
+            var destination = new Vector3(transform.position.x + randomDirection.x, transform.position.y + randomDirection.y, transform.position.z);
+            GetComponent<AIDestinationSetter>().target.position = destination;
+
+            // Wait for the character to reach the destination
+            yield return new WaitUntil(() => Vector3.Distance(transform.position, destination) < 0.1f);
+
+            // Wait for a short random amount of time
+            yield return new WaitForSeconds(Random.Range(3, 10)); 
+
+            CheckState();
+        }
+    }
+
+    public void StopIdle()
+    {
+        if (idleRoutine != null)
+        {
+            StopCoroutine(idleRoutine);
+            idleRoutine = null;
+        }
+
+        isActive = false;
     }
 
     private void Walk()
@@ -625,57 +786,57 @@ public class characterTownAI : MonoBehaviour
 
         private void ComposeMusicAction()
         {
-            // Implement Compose Music behavior here
+            isActive = true;
         }
 
         private void CraftItemAction()
         {
-            // Implement Craft Item behavior here
+            isActive = true;
         }
 
         private void PerformAction()
         {
-            // Implement Perform behavior here
+            isActive = true;
         }
 
         private void SculptAction()
         {
-            // Implement Sculpt behavior here
+            isActive = true;
         }
 
         private void SingAction()
         {
-            // Implement Sing behavior here
+            isActive = true;
         }
 
         private void PoetryAction()
         {
-            // Implement Poetry behavior here
+            isActive = true;
         }
 
         private void PlaywritingAction()
         {
-            // Implement Playwriting behavior here
+            isActive = true;
         }
 
         private void PaintingAction()
         {
-            // Implement Painting behavior here
+            isActive = true;
         }
 
         private void DancingAction()
         {
-            // Implement Dancing behavior here
+            isActive = true;
         }
 
         private void GardeningAction()
         {
-            // Implement Gardening behavior here
+            isActive = true;
         }
 
         private void CookingAction()
         {
-            // Implement Cooking behavior here
+            isActive = true;
         }
 
     #endregion
@@ -1932,3 +2093,10 @@ public class characterTownAI : MonoBehaviour
 #endregion
 
 }
+
+
+
+
+
+
+
