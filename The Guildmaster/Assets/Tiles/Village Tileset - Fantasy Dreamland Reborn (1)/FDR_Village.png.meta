@@ -1,0 +1,2184 @@
+fileFormatVersion: 2
+guid: 1555195808e078a4bbeb5217fbc91fd9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FDR_Village_3
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 994
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e73b81cad1c44449a2384172eb1b38
+      internalID: -291581427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_4
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 994
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f71e8c348214834081127af0abd57b8
+      internalID: -1950020885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_5
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 994
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a067b025803cc994cb127b5e784b1a9e
+      internalID: -571827423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_6
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 994
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6c59f30b9221943904d53f7ee35d0a
+      internalID: -1306961848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_7
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 998
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8028b900256e5e4f9317e9435807ac8
+      internalID: -1576852386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_8
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 994
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6075e6ff64173408618bdb05be8284
+      internalID: -993896645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_9
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1012
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f437bfc378cb8764388fbe88a65e8447
+      internalID: -784743519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_10
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1008
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18cfc9350d2b0c348aa7775f3546a1da
+      internalID: 1018045454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_11
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 994
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba672e52299fe84e9adf9ba56bbb6eb
+      internalID: -882594257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_12
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 994
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8458937725a922244ba3a99b85569e97
+      internalID: 2086598934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_18
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 980
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da89bb46acb3bab45acbfd14574bf29c
+      internalID: -1553016849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_19
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 980
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa57c10a57e39aa429d42306416d5bb8
+      internalID: -341849080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_21
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 978
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f204bcf6176974fb546e03961b3752
+      internalID: 1153863572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_22
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 978
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f38f08db0ade24dba56ebd6989372c
+      internalID: 354957127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_23
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 978
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2fe97af09d26e0488ee49004db27a11
+      internalID: -1978831026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_24
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 978
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be198e55133e5d84586e976ccd88846f
+      internalID: 1219244091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_25
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 978
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4d5e695774b184d8e3ec472d0e5086
+      internalID: -150425732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_26
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 978
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 925b50f3e648c9a4e9958b3c92f10dfc
+      internalID: 1255241348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_27
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 962
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29cd65d540b27649b0f66f14407039b
+      internalID: 727991346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_28
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 962
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cdbb4168274812449be6382f598bb06
+      internalID: 1999530454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_30
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 962
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63287f7f349c4894fbc63c6d741585c3
+      internalID: 991266281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_31
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 962
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2955c24d8b5f6545ada231ae69ecf78
+      internalID: 1258289564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_32
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 962
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8948c4058824d4a49b212ece78b6322a
+      internalID: -1707868366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_43
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 946
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a824e20492155644d9efdd61e820d0d2
+      internalID: -1942362108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_47
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 946
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8cd864f6dae0284c9356969ecc5ec1a
+      internalID: 330366957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_48
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 946
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180c5b042cf5b2149af0bd977de0e693
+      internalID: -38748043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_49
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 946
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149f3d5a5aa2a1444a99e4bc1225f96b
+      internalID: 1994815709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_50
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 930
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d1d2e040566c24fae692f9d4ee3aa2
+      internalID: 127864185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_53
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 930
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644a6ac5ce328934cbd080b1a69df409
+      internalID: -1072710940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_54
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 930
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4020d95ef985eaf43bad6b5f3894633d
+      internalID: 1267431791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_55
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 930
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953ddde5ca0467e478c78a5b3bbcd1c7
+      internalID: 181259993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_61
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 898
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3b394fa8dd28a419da2dcb12609134
+      internalID: 22438597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_65
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 916
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771ff18509d970c449d8b0298b549f45
+      internalID: 833062391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_70
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 898
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbff8459fa7632f49b7f9269c796f4ef
+      internalID: 1001641114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_71
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 898
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0febb9f01d0324e4ebd3e5146ad709dd
+      internalID: 1886460433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_72
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 902
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854acf9ae8ef2544aab9f59a07e96485
+      internalID: -1915774284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_75
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 868
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b258cd97d3ac842499501d29df09ab47
+      internalID: -2032340438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_76
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 868
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c51016e0f12e547a33bb2a2da4d026
+      internalID: -1438224533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_90
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 802
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc185651f5d7f5b4d8b08595330b234d
+      internalID: 676076452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_92
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 706
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b2697a06799b74b89316ae8c142411
+      internalID: 2071057281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_93
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 704
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ffbfe8dd66589840acf874443454c6f
+      internalID: -1792459151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_100
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 708
+        width: 56
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f939e5c1c07d1884e8c8f618e3030aed
+      internalID: 1080651975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_105
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 703
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d501cbc91be27c744be237d376f01a69
+      internalID: 1287926731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_114
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 695
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd577f4185d8554a924a53c808f56b0
+      internalID: -631688999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_115
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 642
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a554852f2b10c1246b5617b51f000491
+      internalID: -1602988561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_116
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 640
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7063c5dc7a148354ea3ba0665d108cde
+      internalID: -1362416209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_120
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 671
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67bbd0642db74843bf9426817bac5c3
+      internalID: 1441371582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 578
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7be1a9cc7a13945baabfa0d4feba66
+      internalID: 1374797187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_127
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 576
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2022f7e8958a2bb428f9d2a099b393cb
+      internalID: 1496673336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_135
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 580
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261dfb46cf41a4a47a4bec614e153c1d
+      internalID: -1316703311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_136
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 514
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51bab9317408d554297f3900dfa3cf87
+      internalID: -1333567455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_140
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 516
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0653d0f3d2d734d810a9bf4faf6a07
+      internalID: 1578753951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_141
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 383
+        width: 15
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4e4a2a35c718c44aaea7f5f979a0f3
+      internalID: 1043750052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_142
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 383
+        width: 15
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1c2d7f0e2a948448f92f47bc4be7c4
+      internalID: -889614293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_145
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 320
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed868d10fb471af45ab104fa5bcb5c57
+      internalID: -725597387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_146
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 54
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa85e5e48a34e14ba4e4ff6f8046b1f
+      internalID: 874627597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_147
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 320
+        width: 118
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e8e91680205e448b09163e193bdaa1
+      internalID: -1889064152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_148
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 256
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfcc6ad037496da4b9002861c82168d8
+      internalID: 255123460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_149
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 300
+        width: 64
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d2bf5cd77812040ab715e9344f7d58
+      internalID: 871979748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_152
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 276
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e25f197917d9d146873e93216017048
+      internalID: -1692405722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_153
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 288
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f00263ecfdbc424bbe2a27c09b57450
+      internalID: 244327930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_154
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 268
+        width: 64
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387e4bdc807b53c41a4542438121d599
+      internalID: -544190142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_155
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 254
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b3c1321b2632d4ba3ab7f6862c57c5
+      internalID: -445296055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_157
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 192
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122f54e4ac0c3564e8dbb3a193278696
+      internalID: -232030072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_158
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 192
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4805078035ffcfb4a87b87cc6766ddc0
+      internalID: -8322549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_159
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 128
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59bd00eb0d43e8468264b36739dacfc
+      internalID: 2143365908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_160
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 122
+        width: 42
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5b2a3e42ea91f49929545bb3566523
+      internalID: -2013225590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_161
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 164
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c80ec3978218b4399eb7c562ffe7e1
+      internalID: 351459922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_162
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ccc74733e6d4064090c34ef52904d21
+      internalID: -1226389292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_165
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 92
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318874c993fef9541b19cac20111c202
+      internalID: -1975309301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_166
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 106
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2348b7d23f82d4291993ce391b5737
+      internalID: 761844839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_167
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 92
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa05f3bb59dc594ca3c58417c470423
+      internalID: 152199991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_168
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 106
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b181164e7bc664d98f6ef0075af635
+      internalID: 1337064381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_169
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 96
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99c976e77529934cb261af0ff35a10a
+      internalID: 767132408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_170
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 74
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706a407eebe5b314389ded7c99ab502e
+      internalID: -362393309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_171
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 106
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c724b80fe91dca459286fd4fb0c73bb
+      internalID: -650347199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_172
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 100
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607705929db0cc4489a7f2a67ec3234d
+      internalID: -1005728656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_173
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 95
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905202bf9de64554e85c2281a07a6826
+      internalID: 769558016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_174
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 74
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce077278e64e0e8428d3b3d50168a91e
+      internalID: 1423695832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_175
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 88
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d84d6dd7e17e3418d8350ae12f5056
+      internalID: 1407800358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_176
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 76
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8e997ecde02924daa4912a797980ef
+      internalID: 2122838953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_177
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 34
+        width: 90
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12d1cd9744f9d744957dd5e07c539df
+      internalID: 2043664352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_178
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 34
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1038edb7404d6384a84c04d1eda50f71
+      internalID: 168215981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_179
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 4
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c4ada2ab47d3e4297f521a36a9c107
+      internalID: 1305860121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_180
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 2
+        width: 88
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7881cf1058fc45745a32365934b5f913
+      internalID: 1395014212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_181
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2280e97a94c675a459519a38d47350c2
+      internalID: -1073919977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_182
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 4
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debc8bec2f6c5a449944aefc65971e0a
+      internalID: 1866554808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FDR_Village_0
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 512
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e5040c7e7b2e64a9c4d95ecb19809a
+      internalID: 1619924383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      FDR_Village_0: 1619924383
+      FDR_Village_1: -233930704
+      FDR_Village_10: 1018045454
+      FDR_Village_100: 1080651975
+      FDR_Village_101: 716082682
+      FDR_Village_102: -2055304978
+      FDR_Village_103: -1979281320
+      FDR_Village_104: -1753428953
+      FDR_Village_105: 1287926731
+      FDR_Village_106: -216059945
+      FDR_Village_107: 1750251103
+      FDR_Village_108: 1791586758
+      FDR_Village_109: 857818160
+      FDR_Village_11: -882594257
+      FDR_Village_110: -142308601
+      FDR_Village_111: -104686797
+      FDR_Village_112: -808249787
+      FDR_Village_113: -538874928
+      FDR_Village_114: -631688999
+      FDR_Village_115: -1602988561
+      FDR_Village_116: -1362416209
+      FDR_Village_117: -1412222126
+      FDR_Village_118: -672662579
+      FDR_Village_119: -648433520
+      FDR_Village_12: 2086598934
+      FDR_Village_120: 1441371582
+      FDR_Village_121: 1338359444
+      FDR_Village_122: -1948901439
+      FDR_Village_123: -383011532
+      FDR_Village_124: 1554288930
+      FDR_Village_125: -1361301970
+      FDR_Village_126: 1374797187
+      FDR_Village_127: 1496673336
+      FDR_Village_128: 1264652992
+      FDR_Village_129: -1706969415
+      FDR_Village_13: 140117987
+      FDR_Village_130: -1618023972
+      FDR_Village_131: 1876655929
+      FDR_Village_132: 797126012
+      FDR_Village_133: -1073063700
+      FDR_Village_134: 1639257432
+      FDR_Village_135: -1316703311
+      FDR_Village_136: -1333567455
+      FDR_Village_137: -1741661155
+      FDR_Village_138: 371770986
+      FDR_Village_139: 1339529894
+      FDR_Village_14: -397119422
+      FDR_Village_140: 1578753951
+      FDR_Village_141: 1043750052
+      FDR_Village_142: -889614293
+      FDR_Village_143: -1750143084
+      FDR_Village_144: 1963142166
+      FDR_Village_145: -725597387
+      FDR_Village_146: 874627597
+      FDR_Village_147: -1889064152
+      FDR_Village_148: 255123460
+      FDR_Village_149: 871979748
+      FDR_Village_15: 95269607
+      FDR_Village_150: 688695356
+      FDR_Village_151: -240879194
+      FDR_Village_152: -1692405722
+      FDR_Village_153: 244327930
+      FDR_Village_154: -544190142
+      FDR_Village_155: -445296055
+      FDR_Village_156: -415598772
+      FDR_Village_157: -232030072
+      FDR_Village_158: -8322549
+      FDR_Village_159: 2143365908
+      FDR_Village_16: -1493964813
+      FDR_Village_160: -2013225590
+      FDR_Village_161: 351459922
+      FDR_Village_162: -1226389292
+      FDR_Village_163: -1068358105
+      FDR_Village_164: -192905780
+      FDR_Village_165: -1975309301
+      FDR_Village_166: 761844839
+      FDR_Village_167: 152199991
+      FDR_Village_168: 1337064381
+      FDR_Village_169: 767132408
+      FDR_Village_17: -974459190
+      FDR_Village_170: -362393309
+      FDR_Village_171: -650347199
+      FDR_Village_172: -1005728656
+      FDR_Village_173: 769558016
+      FDR_Village_174: 1423695832
+      FDR_Village_175: 1407800358
+      FDR_Village_176: 2122838953
+      FDR_Village_177: 2043664352
+      FDR_Village_178: 168215981
+      FDR_Village_179: 1305860121
+      FDR_Village_18: -1553016849
+      FDR_Village_180: 1395014212
+      FDR_Village_181: -1073919977
+      FDR_Village_182: 1866554808
+      FDR_Village_19: -341849080
+      FDR_Village_2: -1426570682
+      FDR_Village_20: -2022917804
+      FDR_Village_21: 1153863572
+      FDR_Village_22: 354957127
+      FDR_Village_23: -1978831026
+      FDR_Village_24: 1219244091
+      FDR_Village_25: -150425732
+      FDR_Village_26: 1255241348
+      FDR_Village_27: 727991346
+      FDR_Village_28: 1999530454
+      FDR_Village_29: 1701838786
+      FDR_Village_3: -291581427
+      FDR_Village_30: 991266281
+      FDR_Village_31: 1258289564
+      FDR_Village_32: -1707868366
+      FDR_Village_33: 1638082849
+      FDR_Village_34: -1841086720
+      FDR_Village_35: 2022253938
+      FDR_Village_36: 1611073521
+      FDR_Village_37: 1594105226
+      FDR_Village_38: -1391849320
+      FDR_Village_39: 312933384
+      FDR_Village_4: -1950020885
+      FDR_Village_40: -565702879
+      FDR_Village_41: -796482551
+      FDR_Village_42: -2088076342
+      FDR_Village_43: -1942362108
+      FDR_Village_44: 965146022
+      FDR_Village_45: 635434918
+      FDR_Village_46: -1120577284
+      FDR_Village_47: 330366957
+      FDR_Village_48: -38748043
+      FDR_Village_49: 1994815709
+      FDR_Village_5: -571827423
+      FDR_Village_50: 127864185
+      FDR_Village_51: 1486564833
+      FDR_Village_52: -715078990
+      FDR_Village_53: -1072710940
+      FDR_Village_54: 1267431791
+      FDR_Village_55: 181259993
+      FDR_Village_56: 788724229
+      FDR_Village_57: -1324748277
+      FDR_Village_58: 1997756238
+      FDR_Village_59: -1670047422
+      FDR_Village_6: -1306961848
+      FDR_Village_60: 905838498
+      FDR_Village_61: 22438597
+      FDR_Village_62: 1693916843
+      FDR_Village_63: 2056049297
+      FDR_Village_64: -1177731665
+      FDR_Village_65: 833062391
+      FDR_Village_66: -738626384
+      FDR_Village_67: 1836618361
+      FDR_Village_68: 1532935037
+      FDR_Village_69: 1141759972
+      FDR_Village_7: -1576852386
+      FDR_Village_70: 1001641114
+      FDR_Village_71: 1886460433
+      FDR_Village_72: -1915774284
+      FDR_Village_73: 222989020
+      FDR_Village_74: -1296202939
+      FDR_Village_75: -2032340438
+      FDR_Village_76: -1438224533
+      FDR_Village_77: -1442078270
+      FDR_Village_78: -907262199
+      FDR_Village_79: 53394573
+      FDR_Village_8: -993896645
+      FDR_Village_80: 1489569963
+      FDR_Village_81: 2094124561
+      FDR_Village_82: 1199104228
+      FDR_Village_83: 1519197293
+      FDR_Village_84: -1041357154
+      FDR_Village_85: -1002787733
+      FDR_Village_86: 321236650
+      FDR_Village_87: 197736076
+      FDR_Village_88: -202321030
+      FDR_Village_89: 1291358029
+      FDR_Village_9: -784743519
+      FDR_Village_90: 676076452
+      FDR_Village_91: 1195106054
+      FDR_Village_92: 2071057281
+      FDR_Village_93: -1792459151
+      FDR_Village_94: -342915936
+      FDR_Village_95: 1617152862
+      FDR_Village_96: 842631013
+      FDR_Village_97: -1150769399
+      FDR_Village_98: 1279424684
+      FDR_Village_99: 2006529633
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

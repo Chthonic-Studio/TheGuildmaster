@@ -173,6 +173,9 @@ public class CharacterProfile : MonoBehaviour
             Debug.LogError("CharacterSpawner not found");
         
         }
+        
+        DontDestroyOnLoad(gameObject);
+
     }
     
     // Start is called before the first frame update

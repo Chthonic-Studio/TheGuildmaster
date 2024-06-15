@@ -18,6 +18,8 @@ GameObject:
   - component: {fileID: 4430477743154044576}
   - component: {fileID: 828635347108422427}
   - component: {fileID: 4367314673553355472}
+  - component: {fileID: 6350729596379404434}
+  - component: {fileID: 3845626268302042658}
   m_Layer: 8
   m_Name: Character
   m_TagString: Character
@@ -64,6 +66,8 @@ MonoBehaviour:
   selectedPersonality: {fileID: 0}
   selectedBackstory: {fileID: 0}
   CharacterStatuses: []
+  CharacterInventory: []
+  Gold: 0
   Health: 0
   Mana: 0
   Strength: 0
@@ -316,6 +320,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c09eee3cbed3b44bf87e9954e0b114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  character: {fileID: 0}
+  state: 0
+  stress: 0
+  comfort: 0
+  loneliness: 0
+  fatigue: 0
+  isHurt: 0
+  mood: 0
+  explorationPotential: 0
+  stressModifier: 0
+  comfortModifier: 0
+  lonelinessModifier: 0
+  fatigueModifier: 0
+  moodModifier: 0
+  creativityUtilityValue: 0
+  explorationUtilityValue: 0
+  helpingUtilityValue: 0
+  relaxationUtilityValue: 0
+  restUtilityValue: 0
+  shoppingUtilityValue: 0
+  trainingUtilityValue: 0
+  socializationUtilityValue: 0
+  spiritualityUtilityValue: 0
+  entertainmentUtilityValue: 0
+  studyingUtilityValue: 0
+  villainyUtilityValue: 0
 --- !u!114 &4367314673553355472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,3 +360,60 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
+--- !u!114 &6350729596379404434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5744940680769827893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
+--- !u!114 &3845626268302042658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5744940680769827893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 847a14d4dc9cc43679ab34fc78e0182f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 4
+  autoRepath:
+    mode: 2
+    interval: 0.5
+    sensitivity: 10
+    maximumInterval: 2
+    visualizeSensitivity: 0
+  canMove: 1
+  speed: 3
+  orientation: 1
+  enableRotation: 0
+  rotationSpeed: 10
+  interpolatePathSwitches: 1
+  switchPathInterpolationSpeed: 5
+  targetCompatibility: {fileID: 0}
+  repathRateCompatibility: NaN
+  canSearchCompability: 0
