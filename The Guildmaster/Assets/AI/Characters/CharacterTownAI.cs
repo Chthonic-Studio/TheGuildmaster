@@ -7,17 +7,26 @@ public class characterTownAI : MonoBehaviour
 {
     public CharacterProfile character;
     private Dictionary<string, UtilityAI> utilities;
+
     private enum State
     {
         Deciding,
         Idle,
         Walking,
         LookingForAction,
-        Interacting
+        Interacting,
+        Resting
     }
 
+    [SerializeField] public string isDoing;
     [SerializeField] private State state;
     private bool isActive = false;
+    private bool isIdling = false;
+    private Transform moveTarget;
+
+    [Header("Pathfinding variables")]
+    public AIDestinationSetter destinationSetter;
+    public TownDoor door;
     
     [Header("Utility Variables")]
     [SerializeField] private float stress;
@@ -174,6 +183,11 @@ public class characterTownAI : MonoBehaviour
     
 
     #endregion
+
+    void Awake()
+    {
+        moveTarget = transform.Find("MoveTarget");
+    }
     // Update is called once per frame
     void Start()
     {
@@ -194,6 +208,8 @@ public class characterTownAI : MonoBehaviour
             { "Villainy", new UtilityAI(0, 0) }
         };
 
+        isActive = false;
+        
         stress = 0;
         comfort = 0;
         loneliness = 0;
@@ -298,14 +314,38 @@ public class characterTownAI : MonoBehaviour
 
         composeMusic = new ComposeMusic(this, character);
 
+
+
+        //Set initial pathfinding variables
+
+        destinationSetter = GetComponent<AIDestinationSetter>();
+        door = character.house.GetComponentInChildren<TownDoor>();
+
         CalculateUtilityVariables();
         CalculateMainUtilityValues();
     }
 
     void Update()
     {
-        CheckState();
+        if (!isIdling && !isActive)
+        {
+            CheckState();
+        }
 
+        if (state != State.Resting) // Assuming 'state' is the variable holding the current state
+        {
+            StartCoroutine(IncreaseFatigue());
+        }
+
+    }
+
+    private IEnumerator IncreaseFatigue()
+    {
+        while (state != State.Resting)
+        {
+            fatigueModifier += 0.1f;
+            yield return new WaitForSeconds(10f); 
+        }
     }
 
     private void CheckState()
@@ -414,17 +454,28 @@ public class characterTownAI : MonoBehaviour
 
     private void Idle()
     {
-        idleRoutine = StartCoroutine(IdleRoutine());
         isActive = true;
         state = State.Idle;
+        isIdling = true;
+        idleRoutine = StartCoroutine(IdleRoutine());
     }
 
     private IEnumerator IdleRoutine()
     {
         while (true)
         {
-            var randomDirection = Random.insideUnitCircle.normalized * 10; 
-            var destination = new Vector3(transform.position.x + randomDirection.x, transform.position.y + randomDirection.y, transform.position.z);
+            Vector3 destination;
+            do
+            {
+                var randomDirection = Random.insideUnitCircle.normalized * 10; 
+                destination = new Vector3(transform.position.x + randomDirection.x, 
+                    transform.position.y + randomDirection.y, transform.position.z);
+            } 
+            
+            while (Physics.CheckSphere(destination, 0.1f)); // Keep generating new destinations until we find one that is not inside a collider
+
+            // Use the moveTarget variable as the target
+            GetComponent<AIDestinationSetter>().target = moveTarget;
             GetComponent<AIDestinationSetter>().target.position = destination;
 
             // Wait for the character to reach the destination
@@ -436,7 +487,6 @@ public class characterTownAI : MonoBehaviour
             CheckState();
         }
     }
-
     public void StopIdle()
     {
         if (idleRoutine != null)
@@ -446,6 +496,8 @@ public class characterTownAI : MonoBehaviour
         }
 
         isActive = false;
+        isIdling = false;
+        state = State.Deciding;
     }
 
     private void Walk()
@@ -480,7 +532,7 @@ public class characterTownAI : MonoBehaviour
 
     private void CalculateFatigue()
     {
-        fatigue = ((float)character.Constitution * 0.3f) - (mood * 0.1f) + (UnityEngine.Random.Range(0f, 10f));
+        fatigue = (UnityEngine.Random.Range(0f, 5f)) - ((float)character.Constitution * 0.3f);
         fatigue += fatigueModifier;
         fatigue += isHurt? 50 : 0;
     }
@@ -558,7 +610,7 @@ public class characterTownAI : MonoBehaviour
     private UtilityAI CalculateShoppingUtility()
     {
         CalculateUtilityVariables();
-        float desire = ((float)character.Gold * 0.1f) + ((float)character.Ambition * 0.2f) + ((float)character.Curiosity * 0.1f);
+        float desire = ((float)character.gold * 0.1f) + ((float)character.Ambition * 0.2f) + ((float)character.Curiosity * 0.1f);
         float need = (desire * 0.3f) + ((float)character.Resourcefulness * 0.1f) - (stress * 0.2f);
         UtilityAI shoppingUtility = new UtilityAI(desire, need);
         shoppingUtility.CalculateUtilityValue();
@@ -1038,7 +1090,7 @@ public class characterTownAI : MonoBehaviour
 
         private float DonateUtility()
         {
-            float utility = UnityEngine.Random.Range(0f, 15f) + ((float)character.Gold * 0.1f) + ((float)character.Good * 0.2f) + (mood * 0.1f);
+            float utility = UnityEngine.Random.Range(0f, 15f) + ((float)character.gold * 0.1f) + ((float)character.Good * 0.2f) + (mood * 0.1f);
             utility += donateModifier;
             return utility;
         }
@@ -1333,21 +1385,21 @@ public class characterTownAI : MonoBehaviour
 
         private float GoEatUtility()
         {
-            float utility = UnityEngine.Random.Range(0f, 15f) +  + ((float)character.Gold * 0.1f) + ((float)character.Ambition * 0.2f) + ((float)character.Curiosity * 0.1f) + (mood * 0.2f) - (stress * 0.2f);
+            float utility = UnityEngine.Random.Range(0f, 15f) +  + ((float)character.gold * 0.1f) + ((float)character.Ambition * 0.2f) + ((float)character.Curiosity * 0.1f) + (mood * 0.2f) - (stress * 0.2f);
             utility += goEatModifier;
             return utility;
         }
 
         private float BarterUtility()
         {
-            float utility = UnityEngine.Random.Range(0f, 15f) + ((float)character.Resourcefulness * 0.3f) + ((float)character.Persuasion * 0.3f) + ((float)character.Charisma * 0.1f) + ((float)character.Sociability * 0.1f) + ((float)character.Gold * 0.1f) - (stress * 0.2f) - (fatigue * 0.2f);       
+            float utility = UnityEngine.Random.Range(0f, 15f) + ((float)character.Resourcefulness * 0.3f) + ((float)character.Persuasion * 0.3f) + ((float)character.Charisma * 0.1f) + ((float)character.Sociability * 0.1f) + ((float)character.gold * 0.1f) - (stress * 0.2f) - (fatigue * 0.2f);       
             utility += barterModifier;
             return utility;
         }
 
         private float BuyItemUtility()
         {
-            float utility = UnityEngine.Random.Range(0f, 15f) + ((float)character.Gold * 0.1f) + ((float)character.Ambition * 0.2f) + ((float)character.Curiosity * 0.1f) + (mood * 0.1f) - (stress * 0.2f);
+            float utility = UnityEngine.Random.Range(0f, 15f) + ((float)character.gold * 0.1f) + ((float)character.Ambition * 0.2f) + ((float)character.Curiosity * 0.1f) + (mood * 0.1f) - (stress * 0.2f);
             utility += buyItemModifier;
             return utility;
         }
@@ -1357,15 +1409,15 @@ public class characterTownAI : MonoBehaviour
             float utility = UnityEngine.Random.Range(0f, 15f) + ((float)character.Resourcefulness * 0.3f) + ((float)character.Intelligence * 0.1f) + ((float)character.Sociability * 0.1f) + (stress * 0.5f);
             
             // Calculate the sellItemModifier based on the character's gold
-            if (character.Gold < 100)
+            if (character.gold < 100)
             {
                 sellItemModifier += 20f;
             }
-            else if (character.Gold < 500)
+            else if (character.gold < 500)
             {
                 sellItemModifier += 10f;
             }
-            else if (character.Gold < 1000)
+            else if (character.gold < 1000)
             {
                 sellItemModifier += 5f;
             }
@@ -1383,7 +1435,7 @@ public class characterTownAI : MonoBehaviour
 
         private float ComissionItemUtility()
         {
-            float utility = UnityEngine.Random.Range(0f, 15f) + ((float)character.Resourcefulness * 0.5f) + ((float)character.Ambition * 0.3f) + ((float)character.Charisma * 0.1f) + ((float)character.Confidence * 0.1f) + ((float)character.Gold * 0.09f);       
+            float utility = UnityEngine.Random.Range(0f, 15f) + ((float)character.Resourcefulness * 0.5f) + ((float)character.Ambition * 0.3f) + ((float)character.Charisma * 0.1f) + ((float)character.Confidence * 0.1f) + ((float)character.gold * 0.09f);       
             utility += comissionItemModifier;
             return utility;
         }
@@ -2091,6 +2143,14 @@ public class characterTownAI : MonoBehaviour
     #endregion
 
 #endregion
+
+    public IEnumerator WaitAtDoor(float minSeconds, float maxSeconds)
+    {
+        // Wait for a random number of seconds between minSeconds and maxSeconds
+        yield return new WaitForSeconds(Random.Range(minSeconds, maxSeconds));
+
+        // Implement the logic for what the character should do after waiting at the door
+    }
 
 }
 

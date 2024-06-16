@@ -7,6 +7,7 @@ public class SpriteManager : MonoBehaviour
 {
     public static SpriteManager Instance;
     public List<CharacterSpriteSO> characterSprites;
+    public List<NPCSpriteSO> npcSprites;
 
     void Awake()
     {

@@ -4,10 +4,11 @@ using UnityEngine;
 public class HouseController : MonoBehaviour
 {
     // List to store the characters living in the house
-    public List<CharacterProfile> inhabitants;
+    public List<CharacterProfile> characterInhabitants;
+    public List<NPCProfile> npcInhabitants;
     [SerializeField] private int maxInhabitants = 5;
 
-        void Awake() 
+    void Awake() 
     {
         DontDestroyOnLoad(gameObject);
     }
@@ -16,40 +17,70 @@ public class HouseController : MonoBehaviour
     void Start()
     {
         // Initialize the inhabitants list
-        inhabitants = new List<CharacterProfile>();
+        characterInhabitants = new List<CharacterProfile>();
+        npcInhabitants = new List<NPCProfile>();
     }
 
     public bool IsFull()
     {
-        return inhabitants.Count >= maxInhabitants;
+        return (characterInhabitants.Count + npcInhabitants.Count) >= maxInhabitants;
     }
 
-    public bool ContainsInhabitant(CharacterProfile character)
+    public bool ContainsCharacter(CharacterProfile character)
     {
-        return inhabitants.Contains(character);
+        return characterInhabitants.Contains(character);
+    }
+
+    public bool ContainsNPC(NPCProfile npc)
+    {
+        return npcInhabitants.Contains(npc);
     }
 
     // Method to add a character to the house
-    public void AddInhabitant(CharacterProfile character)
+    public void AddCharacter(CharacterProfile character)
     {
-        if (!inhabitants.Contains(character))
+        if (!characterInhabitants.Contains(character) && !IsFull())
         {
-            inhabitants.Add(character);
+            characterInhabitants.Add(character);
+        }
+    }
+
+    // Method to add an NPC to the house
+    public void AddNPC(NPCProfile npc)
+    {
+        if (!npcInhabitants.Contains(npc) && !IsFull())
+        {
+            npcInhabitants.Add(npc);
         }
     }
 
     // Method to remove a character from the house
-    public void RemoveInhabitant(CharacterProfile character)
+    public void RemoveCharacter(CharacterProfile character)
     {
-        if (inhabitants.Contains(character))
+        if (characterInhabitants.Contains(character))
         {
-            inhabitants.Remove(character);
+            characterInhabitants.Remove(character);
         }
     }
 
-    // Method to get all inhabitants of the house
-    public List<CharacterProfile> GetInhabitants()
+    // Method to remove an NPC from the house
+    public void RemoveNPC(NPCProfile npc)
     {
-        return inhabitants;
+        if (npcInhabitants.Contains(npc))
+        {
+            npcInhabitants.Remove(npc);
+        }
+    }
+
+    // Method to get all character inhabitants of the house
+    public List<CharacterProfile> GetCharacterInhabitants()
+    {
+        return characterInhabitants;
+    }
+
+    // Method to get all NPC inhabitants of the house
+    public List<NPCProfile> GetNPCInhabitants()
+    {
+        return npcInhabitants;
     }
 }

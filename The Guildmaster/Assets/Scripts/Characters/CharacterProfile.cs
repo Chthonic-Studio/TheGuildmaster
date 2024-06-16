@@ -15,6 +15,8 @@ public class CharacterProfile : MonoBehaviour
     [SerializeField] public string characterGender;
     [SerializeField] public int level;
     [SerializeField] public int experience;
+    [SerializeField] public int age;
+    [SerializeField] public HouseController house;
     
     [Header("Character Variables")]
     public RaceSO selectedRace;
@@ -29,7 +31,7 @@ public class CharacterProfile : MonoBehaviour
 
     [Header("Character Inventory")]
     [SerializeField] public List<ItemSO> CharacterInventory = new List<ItemSO>();
-    [SerializeField] public int Gold;
+    [SerializeField] public int gold;
 
     // Character Main Stats
     [Header("Character Main Stats")]
@@ -190,12 +192,21 @@ public class CharacterProfile : MonoBehaviour
             Debug.LogError("CharacterSpawner not found at start of CharacterProfile script");
         }
 
+        // Assign a house to the character
+        house = HousingManager.Instance.AssignHouseToCharacter(this);
+
         // Set the name of the GameObject
         gameObject.name = characterFirstName + " " + characterLastName + " " + characterID;
 
         // Initialize Level and Experience
         level = 1;
         experience = 0;
+
+        // Initialize gold
+        gold = UnityEngine.Random.Range(0, 100);
+
+        // Initialize Age
+        age = UnityEngine.Random.Range(15, 30);
         
         // Calculate initial stats
         CalculateStats();
