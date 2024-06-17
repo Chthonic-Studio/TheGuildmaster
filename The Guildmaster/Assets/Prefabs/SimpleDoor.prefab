@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5936962122878310778}
   - component: {fileID: 2495081335018005843}
   - component: {fileID: 4475187837267818755}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SimpleDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

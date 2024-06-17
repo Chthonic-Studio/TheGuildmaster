@@ -15,6 +15,7 @@ public class characterTownAI : MonoBehaviour
         Walking,
         LookingForAction,
         Interacting,
+        OnAction,
         Resting
     }
 
@@ -313,6 +314,17 @@ public class characterTownAI : MonoBehaviour
 
 
         composeMusic = new ComposeMusic(this, character);
+        craftItem = new CraftItem(this, character);
+        perform = new Perform(this, character);
+        sculpt = new Sculpt(this, character);
+        sing = new Sing(this, character);
+        poetry = new Poetry(this, character);
+        playwriting = new Playwriting(this, character);
+        painting = new Painting(this, character);
+        dancing = new Dancing(this, character);
+        gardening = new Gardening(this, character);
+        cooking = new Cooking(this, character);
+
 
 
 
@@ -325,27 +337,50 @@ public class characterTownAI : MonoBehaviour
         CalculateMainUtilityValues();
     }
 
+    private bool isIncreasingFatigue = false; 
+    private bool isCheckingState = false;
+
     void Update()
     {
-        if (!isIdling && !isActive)
-        {
-            CheckState();
-        }
 
-        if (state != State.Resting) // Assuming 'state' is the variable holding the current state
+        if (state != State.Resting && !isIncreasingFatigue) // Assuming 'state' is the variable holding the current state
         {
             StartCoroutine(IncreaseFatigue());
+        }
+
+        if (!isIdling && !isActive && !isCheckingState)
+        {
+            StartCoroutine(CheckStateCoroutine());
         }
 
     }
 
     private IEnumerator IncreaseFatigue()
     {
+        isIncreasingFatigue = true;
+
         while (state != State.Resting)
         {
             fatigueModifier += 0.1f;
             yield return new WaitForSeconds(10f); 
         }
+
+        isIncreasingFatigue = false;
+        
+        yield return null;
+    }
+
+    private IEnumerator CheckStateCoroutine()
+    {
+        isCheckingState = true;
+
+        while (!isIdling && !isActive)
+        {
+            CheckState();
+            yield return new WaitForSeconds(5f);
+        }
+
+        isCheckingState = false;
     }
 
     private void CheckState()
@@ -493,11 +528,11 @@ public class characterTownAI : MonoBehaviour
         {
             StopCoroutine(idleRoutine);
             idleRoutine = null;
+            isActive = false;
+            isIdling = false;
+            state = State.Deciding;
         }
 
-        isActive = false;
-        isIdling = false;
-        state = State.Deciding;
     }
 
     private void Walk()
@@ -839,56 +874,89 @@ public class characterTownAI : MonoBehaviour
         private void ComposeMusicAction()
         {
             isActive = true;
+            isDoing = "Compose Music";
+
+            ComposeMusic composeMusic = new ComposeMusic(this, character);
         }
 
         private void CraftItemAction()
         {
             isActive = true;
+            isDoing = "Crafting";
+
+            CraftItem craftItem = new CraftItem(this, character);
         }
 
         private void PerformAction()
         {
             isActive = true;
+            isDoing = "Performing";
+
+            Perform perform = new Perform(this, character);
         }
 
         private void SculptAction()
         {
             isActive = true;
+            isDoing = "Sculpting";
+
+            Sculpt sculpt = new Sculpt(this, character);
         }
 
         private void SingAction()
         {
             isActive = true;
+            isDoing = "Singing";
+
+            Sing sing = new Sing(this, character);
         }
 
         private void PoetryAction()
         {
             isActive = true;
+            isDoing = "Poetry";
+
+            Poetry poetry = new Poetry(this, character);
         }
 
         private void PlaywritingAction()
         {
             isActive = true;
+            isDoing = "Playwriting";
+
+            Playwriting playwriting = new Playwriting(this, character);
         }
 
         private void PaintingAction()
         {
-            isActive = true;
+            isActive = true;   
+            isDoing = "Painting";
+
+            Painting painting = new Painting(this, character);
         }
 
         private void DancingAction()
         {
             isActive = true;
+            isDoing = "Dancing";
+
+            Dancing dancing = new Dancing(this, character);
         }
 
         private void GardeningAction()
         {
             isActive = true;
+            isDoing = "Gardening";
+
+            Gardening gardening = new Gardening(this, character);
         }
 
         private void CookingAction()
         {
             isActive = true;
+            isDoing = "Cooking";
+
+            Cooking cooking = new Cooking (this, character);
         }
 
     #endregion
@@ -2148,6 +2216,10 @@ public class characterTownAI : MonoBehaviour
     {
         // Wait for a random number of seconds between minSeconds and maxSeconds
         yield return new WaitForSeconds(Random.Range(minSeconds, maxSeconds));
+
+        isActive = false;
+
+        CheckState();
 
         // Implement the logic for what the character should do after waiting at the door
     }
