@@ -15,5 +15,5 @@ MonoBehaviour:
   sprite: {fileID: 0}
   animatorController: {fileID: 0}
   races:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: e630e8798d261bf4389cec2de25dfc1c, type: 2}
   occupation: 0

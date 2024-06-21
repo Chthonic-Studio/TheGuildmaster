@@ -161,7 +161,12 @@ public class characterTownAI : MonoBehaviour
     private Gardening gardening;
     private Cooking cooking;
     // Exploration Scripts //
-
+    private VisitLandmark visitLandmark;
+    private GoOutOfTown goOutOfTown;
+    private TreasureHunt treasureHunt;
+    private LocalFestival localFestival;
+    private TombRaiding tombRaiding;
+    private GoExploring goExploring;
     // Helping Scripts //
 
     // Relaxation Scripts //
@@ -313,6 +318,9 @@ public class characterTownAI : MonoBehaviour
         #endregion
 
 
+        #region Action Script Initialization
+
+        // Creativity Scripts //
         composeMusic = new ComposeMusic(this, character);
         craftItem = new CraftItem(this, character);
         perform = new Perform(this, character);
@@ -325,7 +333,24 @@ public class characterTownAI : MonoBehaviour
         gardening = new Gardening(this, character);
         cooking = new Cooking(this, character);
 
+        // Exploration Scripts //
 
+        visitLandmark = new VisitLandmark(this, character);
+        goOutOfTown = new GoOutOfTown(this, character);
+        treasureHunt = new TreasureHunt(this, character);
+        localFestival = new LocalFestival(this, character);
+        tombRaiding = new TombRaiding(this, character);
+        goExploring = new GoExploring(this, character);
+
+        // Helping Scripts //
+
+
+
+
+
+
+
+        #endregion
 
 
         //Set initial pathfinding variables
@@ -1050,32 +1075,50 @@ public class characterTownAI : MonoBehaviour
 
         private void VisitLandmarkAction()
         {
-            // Implement Visit Landmark behavior here
+            isActive = true;
+            isDoing = "Visiting Landmark";
+
+            VisitLandmark visitLandmark = new VisitLandmark(this, character);
         }
 
         private void GoOutOfTownAction()
         {
-            // Implement Go Out Of Town behavior here
+            isActive = true;
+            isDoing = "Going Out of Town";
+
+            GoOutOfTown goOutOfTown = new GoOutOfTown(this, character);
         }
 
         private void TreasureHuntAction()
         {
-            // Implement Treasure Hunt behavior here
+            isActive = true;
+            isDoing = "Treasure Hunting";
+
+            TreasureHunt treasureHunt = new TreasureHunt(this, character);
         }
 
         private void LocalFestivalAction()
         {
-            // Implement Local Festival behavior here
+            isActive = true;
+            isDoing = "Attending Local Festival";
+
+            LocalFestival localFestival = new LocalFestival(this, character);
         }
 
         private void TombRaidingAction()
         {
-            // Implement Tomb Raiding behavior here
+            isActive = true;
+            isDoing = "Tomb Raiding";
+
+            TombRaiding tombRaiding = new TombRaiding(this, character);
         }
 
         private void GoExploringAction()
         {
-            // Implement Go Exploring behavior here
+            isActive = true;
+            isDoing = "Exploring";
+
+            GoExploring goExploring = new GoExploring(this, character);
         }
 
     #endregion
