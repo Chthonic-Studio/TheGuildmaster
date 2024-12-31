@@ -19,13 +19,15 @@ The Guildmaster is a game developed by Chthonic Studio. This repository contains
 ### The Guildmaster Game Design One Pager 
 
 **Platform**: PC
+
 **Target Audience**: Fans of Story Generators (RimWorld, Prison Architect, Kenshi).
+
 **Game Mantra**: Guildmaster Simulator game about managing an adventurers' guild in a medieval fantasy world
 
 **Design Pillars**:
-- Deep Guild Management: Take control of every facet of your Adventurer's Guild. Recruit promising heroes, equip them for success, and assign them to conquer the Tower's monstrous floors. Strategize their approach, manage resources, and guide them through hundreds of branching events that shape your guild's destiny. But time is limited: can you unite your guild and overcome the Tower's threats before the world's fate is sealed?
-- Strategic Guidance, not Direct Control: While you can't micromanage adventurers in the field, your leadership is crucial. Set their mentality (aggressive, cautious, etc.), select their equipment, and provide tactical direction. Witness the impact of your choices as your adventurers navigate perilous quests and conquer the Tower floor-by-floor.
-- A Living World: Experience decades of simulated time, filled with triumphs, tragedies, and hilarious mishaps. The guild, town, and even your adventurers' lives progress realistically, creating a rich tapestry of stories that will stay with you long after the game ends.
+- **Deep Guild Management**: Take control of every facet of your Adventurer's Guild. Recruit promising heroes, equip them for success, and assign them to conquer the Tower's monstrous floors. Strategize their approach, manage resources, and guide them through hundreds of branching events that shape your guild's destiny. But time is limited: can you unite your guild and overcome the Tower's threats before the world's fate is sealed?
+- **Strategic Guidance, not Direct Control**: While you can't micromanage adventurers in the field, your leadership is crucial. Set their mentality (aggressive, cautious, etc.), select their equipment, and provide tactical direction. Witness the impact of your choices as your adventurers navigate perilous quests and conquer the Tower floor-by-floor.
+- **A Living World**: Experience decades of simulated time, filled with triumphs, tragedies, and hilarious mishaps. The guild, town, and even your adventurers' lives progress realistically, creating a rich tapestry of stories that will stay with you long after the game ends.
 
 **Premise**
 In this unique medieval fantasy experience, lead the charge as a seasoned Elf Guildmaster. Though your centuries of experience lie beyond direct combat, your strategic mind remains sharp. Wield a new kind of power – leadership – to manage your Adventurer's Guild. Recruit promising heroes, hone their skills, and guide them on critical missions to conquer the Tower, a monstrous keep threatening the world's very existence. But time is not your friend – can you unite your guild and strategically overcome this looming threat before it's too late?
