@@ -121,6 +121,9 @@ public class Stats
     [StatAttribute("PsionicResistance")]
     public int PsionicResistance { get; set; }
 
+    [StatAttribute("Armor")]
+    public int Armor { get; set; }
+
     [StatAttribute("Sociability")]
     public int Sociability { get; set; }
 

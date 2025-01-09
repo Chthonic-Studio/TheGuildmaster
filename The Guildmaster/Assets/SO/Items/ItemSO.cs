@@ -6,10 +6,13 @@ using UnityEngine;
 
 public class ItemSO : ScriptableObject
 {
+    [Header("Item Characteristics")]
     [SerializeField] public string itemName;
     [SerializeField] public string itemDescription;
     [SerializeField] public Sprite itemSprite;
     [SerializeField] public int itemValue;
+    [SerializeField] public int itemQuality;
+    [SerializeField] public bool isTradable;
     [SerializeField] public int itemWeight;
     [SerializeField] public int itemDurability;
     [SerializeField] public int itemMaxDurability;
@@ -60,5 +63,46 @@ public class ItemSO : ScriptableObject
     [SerializeField] public bool isRanged;
     [SerializeField] public bool isMelee;
     [SerializeField] public bool isAmmo;
+
+    [Header("Item Main Stats")]
+    [SerializeField] public int Health;
+    [SerializeField] public int Mana;
+    [SerializeField] public int Strength;
+    [SerializeField] public int Agility;
+    [SerializeField] public int Constitution;
+    [SerializeField] public int Wisdom;
+    [SerializeField] public int Intelligence;
+    [SerializeField] public int Charisma;
+    [SerializeField] public int Good;
+    [SerializeField] public int Evil;
+    [SerializeField] public int Leadership;
+    [SerializeField] public int Willpower;
+    [SerializeField] public int Luck;
+    [SerializeField] public int Perception;
+
+    //Item Affinities & Resistances
+    [Header("Item Affinities & Resistances")]
+    [SerializeField] public int FireAffinity;
+    [SerializeField] public int WaterAffinity;
+    [SerializeField] public int EarthAffinity;
+    [SerializeField] public int AirAffinity;
+    [SerializeField] public int LightAffinity;
+    [SerializeField] public int DarkAffinity;
+    [SerializeField] public int ArcaneAffinity;
+    [SerializeField] public int NatureAffinity;
+    [SerializeField] public int PsionicAffinity;
+    [SerializeField] public int LightningAffinity;
+    [SerializeField] public int FireResistance;
+    [SerializeField] public int WaterResistance;
+    [SerializeField] public int EarthResistance;
+    [SerializeField] public int AirResistance;
+    [SerializeField] public int LightResistance;
+    [SerializeField] public int DarkResistance;
+    [SerializeField] public int ArcaneResistance;
+    [SerializeField] public int NatureResistance;
+    [SerializeField] public int LightningResistance;
+    [SerializeField] public int PsionicResistance;
+    [SerializeField] public int Armor;
+
 
 }

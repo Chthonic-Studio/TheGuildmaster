@@ -45,6 +45,10 @@ public class characterTownAI : MonoBehaviour
     [SerializeField] private float fatigueModifier;
     [SerializeField] private float moodModifier;
 
+    [Header("QoL Modifiers")]
+    [SerializeField] private float sleepEfficiency = 1.0f;
+    [SerializeField] private float chanceToWakeUp = 0.0f; // Chance to wake up placeholder
+
     [Header("Debug Utility Values")]
     [SerializeField] private float creativityUtilityValue;
     [SerializeField] private float explorationUtilityValue;
@@ -168,24 +172,69 @@ public class characterTownAI : MonoBehaviour
     private TombRaiding tombRaiding;
     private GoExploring goExploring;
     // Helping Scripts //
-
+    private AssistHomeless assistHomeless;
+    private OrganizeCharity organizeCharity;
+    private HelpTownsfolk helpTownsfolk;
+    private VolunteerWork volunteerWork;
+    private AttendCouncil attendCouncil;
+    private Donate donate;
     // Relaxation Scripts //
-
+    private Bathhouse bathhouse;
+    private Birdwatching birdwatching;
+    private Fishing fishing;
+    private Whoring whoring;
+    private Meditate meditate;
+    private Sunbathing sunbathing;
+    private Stargazing stargazing;
+    private TavernRelaxation tavernRelaxation;
     // Rest Scripts //
-
+    private Sleep sleep;
+    private Exhaustion exhaustion;
     // Shopping Scripts //
-
+    private GoEat goEat;
+    private Barter barter;
+    private BuyItem buyItem;
+    private SellItem sellItem;
+    private WindowShopping windowShopping;
+    private ComissionItem comissionItem;
     // Training Scripts //
-
+    private Spar spar;
+    private AttendWorkshop attendWorkshop;
+    private PracticeSkills practiceSkills;
+    private LiftWeights liftWeights;
+    private Run run;
+    private StudyTactics studyTactics;
+    private MentalTraining mentalTraining;
     // Socialization Scripts //
-
+    private GoToGuildMeeting goToGuildMeeting;
+    private TalkWithCollegue talkWithCollegue;
+    private TalkWithTownsfolk talkWithTownsfolk;
+    private Romance romance;
+    private MakeFriends makeFriends;
+    private AttendParty attendParty;
     // Spirituality Scripts //
-
+    private GoToChurch goToChurch;
+    private Pray pray;
+    private SeekSpiritualGuidance seekSpiritualGuidance;
+    private Pilgrimage pilgrimage;
+    private InnerReflection innerReflection;
     // Entertainment Scripts //
-
+    private WatchShow watchShow;
+    private GoDrink goDrink;
+    private AttendPerformance attendPerformance;
+    private GoGambling goGambling;
+    private TavernEntertainment tavernEntertainment;
     // Studying Scripts //
-
+    private GoToLibrary goToLibrary;
+    private ReadSkillBook readSkillBook;
+    private AttendLecture attendLecture;
+    private StudyHistory studyHistory;
     // Villainy Scripts //
+    private Pickpocket pickpocket;
+    private Steal steal;
+    private Spy spy;
+    private GangWork gangWork;
+    private Murder murder;
     
 
     #endregion
@@ -344,14 +393,89 @@ public class characterTownAI : MonoBehaviour
 
         // Helping Scripts //
 
+        assistHomeless = new AssistHomeless(this, character);
+        organizeCharity = new OrganizeCharity(this, character);
+        helpTownsfolk = new HelpTownsfolk(this, character);
+        volunteerWork = new VolunteerWork(this, character);
+        attendCouncil = new AttendCouncil(this, character);
+        donate = new Donate(this, character);
 
+        // Relaxation Scripts //
 
+        bathhouse = new Bathhouse(this, character);
+        birdwatching = new Birdwatching(this, character);
+        whoring = new Whoring(this, character);
+        fishing = new Fishing(this, character);
+        meditate = new Meditate(this, character);
+        sunbathing = new Sunbathing(this, character);
+        stargazing = new Stargazing(this, character);
+        tavernRelaxation = new TavernRelaxation(this, character);
 
+        // Rest Scripts //
 
+        sleep = new Sleep(this, character);
+        exhaustion = new Exhaustion(this, character);
 
+        // Shopping Scripts //
+
+        goEat = new GoEat(this, character);
+        barter = new Barter(this, character);
+        buyItem = new BuyItem(this, character);
+        sellItem = new SellItem(this, character);
+        windowShopping = new WindowShopping(this, character);
+        comissionItem = new ComissionItem(this, character);
+        
+        // Training Scripts //
+
+        spar = new Spar(this, character);
+        attendWorkshop = new AttendWorkshop(this, character);
+        practiceSkills = new PracticeSkills(this, character);
+        liftWeights = new LiftWeights(this, character);
+        run = new Run(this, character);
+        studyTactics = new StudyTactics(this, character);
+        mentalTraining = new MentalTraining(this, character);
+
+        // Socialization Scripts //
+
+        goToGuildMeeting = new GoToGuildMeeting(this, character);
+        talkWithCollegue = new TalkWithCollegue(this, character);
+        talkWithTownsfolk = new TalkWithTownsfolk(this, character);
+        romance = new Romance(this, character);
+        makeFriends = new MakeFriends(this, character);
+        attendParty = new AttendParty(this, character);
+
+        // Spirituality Scripts //
+
+        goToChurch = new GoToChurch(this, character);
+        pray = new Pray(this, character);
+        seekSpiritualGuidance = new SeekSpiritualGuidance(this, character);
+        pilgrimage = new Pilgrimage(this, character);
+        innerReflection = new InnerReflection(this, character);
+
+        // Entertainment Scripts //
+
+        watchShow = new WatchShow(this, character);
+        goDrink = new GoDrink(this, character);
+        attendPerformance = new AttendPerformance(this, character);
+        goGambling = new GoGambling(this, character);
+        tavernEntertainment = new TavernEntertainment(this, character);
+
+        // Studying Scripts //
+
+        goToLibrary = new GoToLibrary(this, character);
+        readSkillBook = new ReadSkillBook(this, character);
+        attendLecture = new AttendLecture(this, character);
+        studyHistory = new StudyHistory(this, character);
+
+        // Villainy Scripts //
+
+        pickpocket = new Pickpocket(this, character);
+        steal = new Steal(this, character);
+        spy = new Spy(this, character);
+        gangWork = new GangWork(this, character);
+        murder = new Murder(this, character);
 
         #endregion
-
 
         //Set initial pathfinding variables
 
@@ -368,7 +492,14 @@ public class characterTownAI : MonoBehaviour
     void Update()
     {
 
-        if (state != State.Resting && !isIncreasingFatigue) // Assuming 'state' is the variable holding the current state
+        // Check for exhaustion
+        if (state != State.Fainted && character.fatigue > 90)
+        {
+            StartCoroutine(exhaustion.FaintCoroutine());
+        }
+
+        // Existing Update logic...
+        if (state != State.Resting && !isIncreasingFatigue)
         {
             StartCoroutine(IncreaseFatigue());
         }
@@ -1212,32 +1343,50 @@ public class characterTownAI : MonoBehaviour
 
         private void AssistHomelessAction()
         {
-            // Implement Assist Homeless behavior here
+            isActive = true;
+            isDoing = "Assisting Homeless";
+
+            AssistHomeless assistHomeless = new AssistHomeless(this, character);
         }
 
         private void OrganizeCharityAction()
         {
-            // Implement Organize Charity behavior here
+            isActive = true;
+            isDoing = "Organizing Charity";
+
+            OrganizeCharity organizeCharity = new OrganizeCharity(this, character);
         }
 
         private void HelpTownsfolkAction()
         {
-            // Implement Help Townsfolk behavior here
+            isActive = true;
+            isDoing = "Helping Townsfolk";
+
+            HelpTownsfolk helpTownsfolk = new HelpTownsfolk(this, character);
         }
 
         private void VolunteerWorkAction()
         {
-            // Implement Volunteer Work behavior here
+            isActive = true;
+            isDoing = "Volunteering";
+
+            VolunteerWork volunteerWork = new VolunteerWork(this, character);
         }
 
         private void AttendCouncilAction()
         {
-            // Implement Attend Council behavior here
+            isActive = true;
+            isDoing = "Attending Council";
+
+            AttendCouncil attendCouncil = new AttendCouncil(this, character);
         }
 
         private void DonateAction()
         {
-            // Implement Donate behavior here
+            isActive = true;
+            isDoing = "Donating";
+
+            Donate donate = new Donate(this, character);
         }
 
     #endregion
@@ -1357,42 +1506,66 @@ public class characterTownAI : MonoBehaviour
 
         private void BathhouseAction()
         {
-            // Implement Bathhouse behavior here
+            isActive = true;
+            isDoing = "Bathhouse";
+
+            Bathhouse bathhouse = new Bathhouse(this, character);
         }
 
         private void BirdwatchingAction()
         {
-            // Implement Birdwatching behavior here
+            isActive = true;
+            isDoing = "Birdwatching";
+
+            Birdwatching birdwatching = new Birdwatching(this, character);
         }
 
         private void FishingAction()
         {
-            // Implement Fishing behavior here
+            isActive = true;
+            isDoing = "Fishing";
+
+            Fishing fishing = new Fishing(this, character);
         }
 
         private void MeditateAction()
         {
-            // Implement Meditate behavior here
+            isActive = true;
+            isDoing = "Meditating";
+
+            Meditate meditate = new Meditate(this, character);
         }
 
         private void WhorehouseAction()
         {
+            isActive = true;
+            isDoing = "Whoring";
 
+            Whoring whoring = new Whoring(this, character);
         }
 
         private void SunbathingAction()
         {
+            isActive = true;
+            isDoing = "Sunbathing";
 
+            Sunbathing sunbathing = new Sunbathing(this, character);
         }
 
         private void StargazingAction()
         {
+            isActive = true;
+            isDoing = "Stargazing";
 
+            Stargazing stargazing = new Stargazing(this, character);
         }
 
         private void TavernRelaxationAction()
         {
+            isActive = true;
+            isDoing = "Tavern Relaxation";
 
+            TavernRelaxation tavernRelaxation = new TavernRelaxation(this, character);
         }
 
     #endregion
@@ -1440,12 +1613,18 @@ public class characterTownAI : MonoBehaviour
 
         private void SleepAction()
         {
-            // Implement Sleep behavior here
+            isActive = true;
+            isDoing = "Sleeping";
+
+            Sleep sleep = new Sleep(this, character);
         }
 
         private void ExhaustionAction()
         {
-            // Implement Exhaustion behavior here
+            isActive = true;
+            isDoing = "Exhaustion";
+
+            Exhaustion exhaustion = new Exhaustion(this, character);
         }
 
 
@@ -1557,32 +1736,50 @@ public class characterTownAI : MonoBehaviour
 
         private void GoEatAction()
         {
-            // Implement Go Eat behavior here
+            isActive = true;
+            isDoing = "Going to Eat";
+
+            GoEat goEat = new GoEat(this, character);
         }
 
         private void BarterAction()
         {
-            // Implement Barter behavior here
+            isActive = true;
+            isDoing = "Bartering";
+
+            Barter barter = new Barter(this, character);
         }
 
         private void BuyItemAction()
         {
-            // Implement Buy Item behavior here
+            isActive = true;
+            isDoing = "Buying Item";
+
+            BuyItem buyItem = new BuyItem(this, character);
         }
         
         private void SellItemAction()
         {
-            // Implement Sell Item behavior here
+            isActive = true;
+            isDoing = "Selling Item";
+
+            SellItem sellItem = new SellItem(this, character);
         }
 
         private void WindowShoppingAction()
         {
-            // Implement Window Shopping behavior here
+            isActive = true;
+            isDoing = "Window Shopping";
+
+            WindowShopping windowShopping = new WindowShopping(this, character);
         }
 
         private void ComissionItemAction()
         {
-            // Implement Comission Item behavior here
+            isActive = true;
+            isDoing = "Comissioning Item";
+
+            ComissionItem comissionItem = new ComissionItem(this, character);
         }
 
 
@@ -1692,37 +1889,58 @@ public class characterTownAI : MonoBehaviour
 
         private void SparAction()
         {
-            // Implement Spar behavior here
+            isActive = true;
+            isDoing = "Sparing";
+
+            Spar spar = new Spar(this, character);
         }
 
         private void AttendWorkshopAction()
         {
-            // Implement Attend Workshop behavior here
+            isActive = true;
+            isDoing = "Attending Workshop";
+
+            AttendWorkshop attendWorkshop = new AttendWorkshop(this, character);
         }
 
         private void PracticeSkillsAction()
         {
-            // Implement Practice Skills behavior here
+            isActive = true;
+            isDoing = "Practicing Skills";
+
+            PracticeSkills practiceSkills = new PracticeSkills(this, character);
         }
 
         private void LiftWeightsAction()
         {
-            // Implement Lift Weights behavior here
+            isActive = true;
+            isDoing = "Lifting Weights";
+
+            LiftWeights liftWeights = new LiftWeights(this, character);
         }
 
         private void RunAction()
         {
-            // Implement Run behavior here
+            isActive = true;
+            isDoing = "Running";
+
+            Run run = new Run(this, character);
         }
 
         private void StudyTacticsAction()
         {
-            // Implement Study Tactics behavior here
+            isActive = true;
+            isDoing = "Studying Tactics";
+
+            StudyTactics studyTactics = new StudyTactics(this, character);
         }
 
         private void MentalTrainingAction()
         {
-            // Implement Mental Training behavior here
+            isActive = true;
+            isDoing = "Mental Training";
+
+            MentalTraining mentalTraining = new MentalTraining(this, character);
         }
 
     #endregion
@@ -1819,32 +2037,50 @@ public class characterTownAI : MonoBehaviour
 
         private void GoToGuildMeetingAction()
         {
-            // Implement Go To Guild Meeting behavior here
+            isActive = true;
+            isDoing = "Going to Guild Meeting";
+
+            GoToGuildMeeting goToGuildMeeting = new GoToGuildMeeting(this, character);
         }
 
         private void TalkWithCollegueAction()
         {
-            // Implement Talk With Collegue behavior here
+            isActive = true;
+            isDoing = "Talking with Collegue";
+
+            TalkWithCollegue talkWithCollegue = new TalkWithCollegue(this, character);
         }
 
         private void TalkWithTownsfolkAction()
         {
-            // Implement Talk With Townsfolk behavior here
+            isActive = true;
+            isDoing = "Talking with Townsfolk";
+
+            TalkWithTownsfolk talkWithTownsfolk = new TalkWithTownsfolk(this, character);
         }
 
         private void RomanceAction()
         {
-            // Implement Romance behavior here
+            isActive = true;
+            isDoing = "Romancing";
+
+            Romance romance = new Romance(this, character);
         }
 
         private void MakeFriendsAction()
         {
-            // Implement Make Friends behavior here
+            isActive = true;
+            isDoing = "Making Friends";
+
+            MakeFriends makeFriends = new MakeFriends(this, character);
         }
 
         private void AttendPartyAction()
         {
-            // Implement Attend Party behavior here
+            isActive = true;
+            isDoing = "Attending Party";
+
+            AttendParty attendParty = new AttendParty(this, character);
         }
 
 
@@ -1930,27 +2166,42 @@ public class characterTownAI : MonoBehaviour
 
         private void GoToChurchAction()
         {
-            // Implement Go To Church behavior here
+            isActive = true;
+            isDoing = "Going to Church";
+
+            GoToChurch goToChurch = new GoToChurch(this, character);
         }
 
         private void PrayAction()
         {
-            // Implement Pray behavior here
+            isActive = true;
+            isDoing = "Praying";
+
+            Pray pray = new Pray(this, character);
         }
 
         private void PilgrimageAction()
         {
-            // Implement Pilgrimage behavior here
+            isActive = true;
+            isDoing = "Pilgrimage";
+
+            Pilgrimage pilgrimage = new Pilgrimage(this, character);
         }
 
         private void InnerReflectionAction()
         {
-            // Implement Inner Reflection behavior here
+            isActive = true;
+            isDoing = "Inner Reflection";
+
+            InnerReflection innerReflection = new InnerReflection(this, character);
         }
 
         private void SeekSpiritualGuidanceAction()
         {
-            // Implement Seek Spiritual Guidance behavior here
+            isActive = true;
+            isDoing = "Seeking Spiritual Guidance";
+
+            SeekSpiritualGuidance seekSpiritualGuidance = new SeekSpiritualGuidance(this, character);
         }
 
     #endregion
@@ -2035,27 +2286,42 @@ public class characterTownAI : MonoBehaviour
 
         private void WatchShowAction()
         {
-            // Implement Watch Show behavior here
+            isActive = true;
+            isDoing = "Watching Show";
+
+            WatchShow watchShow = new WatchShow(this, character);
         }
 
         private void GoDrinkAction()
         {
-            // Implement Go Drink behavior here
+            isActive = true;
+            isDoing = "Going to Drink";
+
+            GoDrink goDrink = new GoDrink(this, character);
         }
 
         private void AttendPerformanceAction()
         {
-            // Implement Attend Performance behavior here
+            isActive = true;
+            isDoing = "Attending Performance";
+
+            AttendPerformance attendPerformance = new AttendPerformance(this, character);
         }
 
         private void GoGamblingAction()
         {
-            // Implement Go Gambling behavior here
+            isActive = true;
+            isDoing = "Going to Gamble";
+
+            GoGambling goGambling = new GoGambling(this, character);
         }
 
         private void TavernEntertainmentAction()
         {
-            // Implement Tavern Entertainment behavior here
+            isActive = true;
+            isDoing = "Tavern Entertainment";
+
+            TavernEntertainment tavernEntertainment = new TavernEntertainment(this, character);
         }
 
     #endregion
@@ -2128,22 +2394,34 @@ public class characterTownAI : MonoBehaviour
 
         private void GoToLibraryAction()
         {
-            // Implement Go To Library behavior here
+            isActive = true;
+            isDoing = "Going to Library";
+
+            GoToLibrary goToLibrary = new GoToLibrary(this, character);
         }
 
         private void ReadSkillBookAction()
         {
-            // Implement Read Skill Book behavior here
+            isActive = true;
+            isDoing = "Reading Skill Book";
+
+            ReadSkillBook readSkillBook = new ReadSkillBook(this, character);
         }
 
         private void AttendLectureAction()
         {
-            // Implement Attend Lecture behavior here
+            isActive = true;
+            isDoing = "Attending Lecture";
+
+            AttendLecture attendLecture = new AttendLecture(this, character);
         }
 
         private void StudyHistoryAction()
         {
-            // Implement Study History behavior here
+            isActive = true;
+            isDoing = "Studying History";
+
+            StudyHistory studyHistory = new StudyHistory(this, character);
         }
 
     #endregion
@@ -2228,27 +2506,42 @@ public class characterTownAI : MonoBehaviour
 
         private void PickpocketAction()
         {
-            // Implement Pickpocket behavior here
+            isActive = true;
+            isDoing = "Pickpocketing";
+
+            Pickpocket pickpocket = new Pickpocket(this, character);
         }
 
         private void StealAction()
         {
-            // Implement Steal behavior here
+            isActive = true;
+            isDoing = "Stealing";
+
+            Steal steal = new Steal(this, character);
         }
 
         private void SpyAction()
         {
-            // Implement Spy behavior here
+            isActive = true;
+            isDoing = "Spying";
+
+            Spy spy = new Spy(this, character);
         }
 
         private void GangWorkAction()
         {
-            // Implement Gang Work behavior here
+            isActive = true;
+            isDoing = "Gang Work";
+
+            GangWork gangWork = new GangWork(this, character);
         }
 
         private void MurderAction()
         {
+            isActive = true;
+            isDoing = "Murdering";
 
+            Murder murder = new Murder(this, character);
         }
 
     #endregion
@@ -2257,6 +2550,9 @@ public class characterTownAI : MonoBehaviour
 
     public IEnumerator WaitAtDoor(float minSeconds, float maxSeconds)
     {
+        // Wait until the character reaches the door
+        yield return new WaitUntil(() => Vector3.Distance(transform.position, door.transform.position) < 0.1f);
+        
         // Wait for a random number of seconds between minSeconds and maxSeconds
         yield return new WaitForSeconds(Random.Range(minSeconds, maxSeconds));
 
@@ -2267,6 +2563,90 @@ public class characterTownAI : MonoBehaviour
         // Implement the logic for what the character should do after waiting at the door
     }
 
+    public IEnumerator SleepCoroutine(float fatigue)
+    {
+        // Set the state to Resting
+        state = State.Resting;
+        isDoing = "Sleeping";
+
+        // Wait until the character reaches the door
+        yield return new WaitUntil(() => Vector3.Distance(transform.position, door.transform.position) < 0.1f);
+
+        // Simulate sleep duration (you can adjust the duration as needed)
+        float sleepInterval = 1f; // Interval in seconds for checking sleep status and reducing fatigue
+        float wakeUpChanceIncrement = 0.1f; // Incremental chance to wake up per second
+
+        while (true)
+        {
+            // Reduce fatigue each interval
+            this.fatigue -= 1f; // Reduce fatigue each second
+
+            // Ensure fatigue does not go below zero
+            if (this.fatigue < 0)
+            {
+                this.fatigue = 0;
+            }
+
+            // Check if fatigue is below 30 and increment wake up chance
+            if (this.fatigue < 30)
+            {
+                wakeUpChanceIncrement += 0.1f;
+                if (UnityEngine.Random.value < wakeUpChanceIncrement)
+                {
+                    break; // Break the loop to wake up the character
+                }
+            }
+
+            yield return new WaitForSeconds(sleepInterval);
+        }
+
+        // Set the state back to Idle or another appropriate state
+        state = State.Idle;
+        isDoing = "Idle";
+        wakeUpChanceIncrement = 0.0f; // Reset wake up chance
+
+        // Optionally, you can add other effects of sleeping, such as increasing health or mood
+        Debug.Log("Character finished sleeping. Fatigue reduced.");
+    }
+
+    public void SetStateToFainted()
+    {
+        state = State.Fainted;
+        isDoing = "Fainted";
+        isActive = true;
+        Debug.Log("Character fainted from exhaustion.");
+    }
+
+    public void SetStateToIdle()
+    {
+        state = State.Idle;
+        isDoing = "Idle";
+        isActive = false;
+        Debug.Log("Character woke up from fainting.");
+    }
+
+    public void GoToSleep()
+    {
+        // Get the AIDestinationSetter component of the character
+        AIDestinationSetter destinationSetter = GetComponent<AIDestinationSetter>();
+
+        // Get the door of the character's house
+        TownDoor door = character.house.GetComponentInChildren<TownDoor>();
+
+        if (door != null)
+        {
+            // Set the target of the AIDestinationSetter to the door
+            destinationSetter.target = door.transform;
+
+            // Start the coroutine to sleep
+            StartCoroutine(SleepCoroutine(fatigue));
+        }
+        else
+        {
+            Debug.LogError("No TownDoor found in the character's house");
+        }
+    }
+    
 }
 
 

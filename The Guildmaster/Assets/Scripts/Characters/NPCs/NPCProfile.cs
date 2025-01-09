@@ -79,6 +79,10 @@ public class NPCProfile : MonoBehaviour
     [SerializeField] public int intelligence;
     [SerializeField] public int creativity;
 
+    [Header("NPC Inventory")]
+    [SerializeField] public List<ItemSO> BarterInventory = new List<ItemSO>(); // Barter inventory for NPCs
+    [SerializeField] public Store Store;
+
     private List<GameObject> spawners;
 
 
@@ -101,6 +105,8 @@ public class NPCProfile : MonoBehaviour
         workEthic = UnityEngine.Random.Range(-50,50);
         intelligence = UnityEngine.Random.Range(-50,50);
         creativity = UnityEngine.Random.Range(-50,50);
+
+        InitializeBarterInventory(); // Initialize barter inventory based on profession
     }
     
     void Awake()
@@ -140,5 +146,27 @@ public class NPCProfile : MonoBehaviour
         NPCManager.Instance.UnspawnNPC(this);
     }
 
+    private void InitializeBarterInventory()
+    {
+        // Example logic to add items based on NPC's profession
+        // switch (Occupation)
+        // {
+        //     case occupationType.Farmer:
+        //         // Add farming-related items
+        //         // BarterInventory.Add(Resources.Load<ItemSO>("Items/Seeds"));
+        //         // BarterInventory.Add(Resources.Load<ItemSO>("Items/Tools"));
+        //         break;
+        //     case occupationType.Blacksmith:
+        //         // Add blacksmith-related items
+        //         // BarterInventory.Add(Resources.Load<ItemSO>("Items/Weapons"));
+        //         // BarterInventory.Add(Resources.Load<ItemSO>("Items/Armor"));
+        //         break;
+        //     // Add cases for other professions...
+        //     default:
+        //         // Add general items
+        //         // BarterInventory.Add(Resources.Load<ItemSO>("Items/Miscellaneous"));
+        //         break;
+        // }
+    }
 
 }

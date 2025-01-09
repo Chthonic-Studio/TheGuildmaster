@@ -31,7 +31,9 @@ public class CharacterProfile : MonoBehaviour
 
     [Header("Character Inventory")]
     [SerializeField] public List<ItemSO> CharacterInventory = new List<ItemSO>();
+    private Inventory inventory;
     [SerializeField] public int gold;
+    
 
     // Character Main Stats
     [Header("Character Main Stats")]
@@ -77,6 +79,7 @@ public class CharacterProfile : MonoBehaviour
     [SerializeField] public int NatureResistance;
     [SerializeField] public int LightningResistance;
     [SerializeField] public int PsionicResistance;
+    [SerializeField] public int Armor;
     
     // Character Social Stats
     [Header("Character Social Stats")]
@@ -144,6 +147,7 @@ public class CharacterProfile : MonoBehaviour
         {"NatureResistance", 0},
         {"LightningResistance", 0},
         {"PsionicResistance", 0},
+        {"Armor", 0},
         {"Sociability", 0},
         {"Confidence", 0},
         {"Empathy", 0},
@@ -175,6 +179,8 @@ public class CharacterProfile : MonoBehaviour
             Debug.LogError("CharacterSpawner not found");
         
         }
+
+        inventory = new Inventory(CharacterInventory); // Initialize Inventory with CharacterInventory list
         
         DontDestroyOnLoad(gameObject);
 
@@ -295,6 +301,7 @@ public class CharacterProfile : MonoBehaviour
             NatureResistance = Stats["NatureResistance"];
             LightningResistance = Stats["LightningResistance"];
             PsionicResistance = Stats["PsionicResistance"];
+            Armor = Stats["Armor"];
             Sociability = Stats["Sociability"];
             Confidence = Stats["Confidence"];
             Empathy = Stats["Empathy"];
@@ -345,4 +352,19 @@ public class CharacterProfile : MonoBehaviour
         level++;
     }
 
+    // Inventory management methods
+    public bool AddItemToInventory(ItemSO item)
+    {
+        return inventory.AddItem(item);
+    }
+
+    public bool RemoveItemFromInventory(ItemSO item)
+    {
+        return inventory.RemoveItem(item);
+    }
+
+    public List<ItemSO> GetInventoryItems()
+    {
+        return inventory.GetItems();
+    }
 }
