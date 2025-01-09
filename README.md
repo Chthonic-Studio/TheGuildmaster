@@ -9,6 +9,7 @@ The Guildmaster is a game developed by Chthonic Studio. This repository contains
 - [Character System](#character-system)
 - [Leveling System](#leveling-system)
 - [AI](#ai)
+- [Inventory System](#inventory-system)
 - [Dependencies](#dependencies)
 - [Building and Running](#building-and-running)
 - [Contributing](#contributing)
@@ -93,6 +94,13 @@ Characters have a separate AI system while in town, to handle behavior while out
 - **/CharacterTownAI.cs**: All calculations of town AI for characters
 - **/UtilityAI.cs**: Framework of each Utility
 - **/TownActions/**: Folder holding all possible actions that characters can do while in town, meant to be called from the AI of each character.
+
+## Inventory System
+There are multiple types of inventories: Each character has an inventory with capacity of up to 10 items, each NPC holds up to 5 items, each store has an inventory of items that are renewed after a few in-game days, and also of items that can be from character that sold their items to that store, items that the store brought from the Guild, or that the store owner gained from other source and decided to put it up for sale. 
+
+### Components 
+- **/InventorySystem/**: Folder holding all inventory scripts
+- **NPCProfile.cs**: Profile holding all info, stats and inventory of each NPC
 
 ## Dependencies
 
