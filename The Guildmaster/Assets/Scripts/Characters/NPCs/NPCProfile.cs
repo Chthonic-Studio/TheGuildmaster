@@ -149,24 +149,25 @@ public class NPCProfile : MonoBehaviour
     private void InitializeBarterInventory()
     {
         // Example logic to add items based on NPC's profession
-        // switch (Occupation)
-        // {
-        //     case occupationType.Farmer:
-        //         // Add farming-related items
-        //         // BarterInventory.Add(Resources.Load<ItemSO>("Items/Seeds"));
-        //         // BarterInventory.Add(Resources.Load<ItemSO>("Items/Tools"));
-        //         break;
-        //     case occupationType.Blacksmith:
-        //         // Add blacksmith-related items
-        //         // BarterInventory.Add(Resources.Load<ItemSO>("Items/Weapons"));
-        //         // BarterInventory.Add(Resources.Load<ItemSO>("Items/Armor"));
-        //         break;
-        //     // Add cases for other professions...
-        //     default:
-        //         // Add general items
-        //         // BarterInventory.Add(Resources.Load<ItemSO>("Items/Miscellaneous"));
-        //         break;
-        // }
+        switch (Occupation)
+        {
+            case occupationType.Farmer:
+                // Add farming-related items
+                BarterInventory.Add(Resources.Load<ItemSO>("Items/Farmer/Seeds"));
+                BarterInventory.Add(Resources.Load<ItemSO>("Items/Farmer/Tools"));
+                break;
+            case occupationType.Blacksmith:
+                // Add blacksmith-related items
+                BarterInventory.Add(Resources.Load<ItemSO>("Items/Blacksmith/Weapons"));
+                BarterInventory.Add(Resources.Load<ItemSO>("Items/Blacksmith/Armor"));
+                break;
+            // Add cases for other professions...
+            default:
+                // Add general items
+                BarterInventory.Add(Resources.Load<ItemSO>("Items/Miscellaneous"));
+                break;
+        }
     }
 
+    
 }

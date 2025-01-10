@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,14 +11,28 @@ public class Store : MonoBehaviour
         Alchemist,
         Food,
         Clothing,
+        Restaurant,
+        Inn,
+        Tavern,
+        Library,
+        MagicShop
         // Add other store types as needed
     }
 
     [Header("Store Information")]
-    public string storeName;
-    public StoreType storeType;
-    public NPCProfile owner;
-    public List<ItemSO> Inventory = new List<ItemSO>();
+    [SerializeField] public string storeName;
+    [SerializeField] public StoreType storeType;
+    [SerializeField] public NPCProfile owner;
+    [SerializeField] public List<ItemInstance> Inventory = new List<ItemInstance>();
+    [SerializeField] public Dictionary<ItemSO, int> restockQuantities = new Dictionary<ItemSO, int>();
+    [SerializeField] public Dictionary<ItemSO, (int minInterval, int maxInterval)> restockIntervals = new Dictionary<ItemSO, (int, int)>();
+
+
+
+    private void Start()
+    {
+        InitializeInventory();
+    }
 
     public void InitializeStore(NPCProfile owner, StoreType storeType)
     {
@@ -33,35 +48,72 @@ public class Store : MonoBehaviour
         switch (storeType)
         {
             case StoreType.General:
-                // Add general store items
-                Inventory.Add(Resources.Load<ItemSO>("Items/Miscellaneous"));
-                Inventory.Add(Resources.Load<ItemSO>("Items/Food"));
+                AddItemsToInventory("Items/General");
                 break;
             case StoreType.Blacksmith:
-                // Add blacksmith store items
-                Inventory.Add(Resources.Load<ItemSO>("Items/Weapons"));
-                Inventory.Add(Resources.Load<ItemSO>("Items/Armor"));
+                AddItemsToInventory("Items/Blacksmith");
                 break;
             case StoreType.Alchemist:
-                // Add alchemist store items
-                Inventory.Add(Resources.Load<ItemSO>("Items/Potions"));
-                Inventory.Add(Resources.Load<ItemSO>("Items/Reagents"));
+                AddItemsToInventory("Items/Alchemist");
                 break;
             case StoreType.Food:
-                // Add food store items
-                Inventory.Add(Resources.Load<ItemSO>("Items/Food"));
-                Inventory.Add(Resources.Load<ItemSO>("Items/Drinks"));
+                AddItemsToInventory("Items/Food");
                 break;
             case StoreType.Clothing:
-                // Add clothing store items
-                Inventory.Add(Resources.Load<ItemSO>("Items/Clothing"));
-                Inventory.Add(Resources.Load<ItemSO>("Items/Accessories"));
+                AddItemsToInventory("Items/Clothing");
                 break;
             // Add cases for other store types...
             default:
-                // Add general items
-                Inventory.Add(Resources.Load<ItemSO>("Items/Miscellaneous"));
+                AddItemsToInventory("Items/Miscellaneous");
                 break;
         }
+    }
+
+    private void AddItemsToInventory(string folderPath)
+    {
+        ItemSO[] items = Resources.LoadAll<ItemSO>(folderPath);
+        foreach (ItemSO item in items)
+        {
+            if (item.isSellable)
+            {
+                for (int i = 0; i < 5; i++) // Initial quantity of 5 for each item
+                {
+                    CreateAndAddItemInstance(item);
+                }
+                restockQuantities[item] = 5; // Set restock quantity
+                restockIntervals[item] = (60, 120); // Set restock interval between 60 and 120 seconds
+                StartCoroutine(RestockItem(item));
+            }
+        }
+    }
+
+    private void CreateAndAddItemInstance(ItemSO item)
+    {
+        int quality = Random.Range(1, 101); // Random quality between 1 and 100
+        int durability = item.itemMaxDurability;
+        ItemInstance instance = new ItemInstance(item, quality, durability);
+        Inventory.Add(instance);
+    }
+
+    private IEnumerator RestockItem(ItemSO item)
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(Random.Range(restockIntervals[item].minInterval, restockIntervals[item].maxInterval));
+            int currentCount = Inventory.FindAll(i => i.itemTemplate == item).Count;
+            int restockAmount = restockQuantities[item] - currentCount;
+            for (int i = 0; i < restockAmount; i++)
+            {
+                CreateAndAddItemInstance(item);
+            }
+        }
+    }
+
+    public float CalculatePrice(ItemInstance item)
+    {
+        // Example logic to calculate price based on owner's stats and item's quality
+        float price = item.itemTemplate.itemValue * item.quality / 100f;
+        price *= 1 + (owner.intelligence + owner.charisma) / 200f; // Adjust price based on owner stats
+        return price;
     }
 }

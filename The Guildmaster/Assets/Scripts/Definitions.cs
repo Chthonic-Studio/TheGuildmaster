@@ -48,3 +48,28 @@ public class Definitions
         
     }
 }
+
+
+public static class ColliderExtensions
+{
+    public static Vector2 GetRandomPointInCollider(Collider2D collider)
+    {
+        Bounds bounds = collider.bounds;
+
+        // Generate random points within the bounds of the collider
+        float randomX = Random.Range(bounds.min.x, bounds.max.x);
+        float randomY = Random.Range(bounds.min.y, bounds.max.y);
+
+        Vector2 randomPoint = new Vector2(randomX, randomY);
+
+        // Ensure the random point is inside the collider
+        while (!collider.OverlapPoint(randomPoint))
+        {
+            randomX = Random.Range(bounds.min.x, bounds.max.x);
+            randomY = Random.Range(bounds.min.y, bounds.max.y);
+            randomPoint = new Vector2(randomX, randomY);
+        }
+
+        return randomPoint;
+    }
+}

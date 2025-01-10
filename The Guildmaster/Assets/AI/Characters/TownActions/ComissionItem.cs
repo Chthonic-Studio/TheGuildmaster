@@ -1,35 +1,56 @@
+using System.Collections;
 using UnityEngine;
+using Pathfinding;
 
-public class BuyItemAction
+public class ComissionItem
 {
     private characterTownAI characterTownAI;
     private CharacterProfile characterProfile;
-    private ItemSO itemToBuy;
+    private Store store;
 
-    public BuyItemAction(characterTownAI characterTownAI, CharacterProfile characterProfile, ItemSO itemToBuy)
+    public ComissionItem(characterTownAI characterTownAI, CharacterProfile characterProfile)
     {
         this.characterTownAI = characterTownAI;
         this.characterProfile = characterProfile;
-        this.itemToBuy = itemToBuy;
 
-        Execute();
+        StartComissionItem();
     }
 
-    public void Execute()
+    public void StartComissionItem()
     {
-        if (characterProfile.gold >= itemToBuy.itemValue && characterProfile.CharacterInventory.Count < 10)
+        // Get the AIDestinationSetter component of the character
+        AIDestinationSetter destinationSetter = characterTownAI.GetComponent<AIDestinationSetter>();
+
+        // Placeholder logic to select a random store of any type
+        store = StoreManager.Instance.GetRandomStore(Store.StoreType.General);
+        if (store == null)
         {
-            characterProfile.CharacterInventory.Add(itemToBuy);
-            characterProfile.gold -= itemToBuy.itemValue;
-            Debug.Log($"Bought {itemToBuy.itemName} for {itemToBuy.itemValue} gold");
+            Debug.LogWarning("No available store found.");
+            return;
         }
-        else if (characterProfile.gold < itemToBuy.itemValue)
-        {
-            Debug.LogWarning("Not enough gold to buy the item");
-        }
-        else if (characterProfile.CharacterInventory.Count >= 10)
-        {
-            Debug.LogWarning("Inventory is full");
-        }
+
+        // Set the destination to the store
+        destinationSetter.target = store.transform;
+
+        // Start coroutine to handle the commissioning process
+        characterTownAI.StartCoroutine(ComissioningProcess());
+    }
+
+    private IEnumerator ComissioningProcess()
+    {
+        // Wait until the character reaches the store
+        yield return new WaitUntil(() => Vector3.Distance(characterTownAI.transform.position, store.transform.position) < 1f);
+
+        // Simulate entering the store
+        characterTownAI.gameObject.SetActive(false);
+
+        // Simulate time spent commissioning an item
+        yield return new WaitForSeconds(Random.Range(30f, 60f));
+
+        // Simulate exiting the store
+        characterTownAI.gameObject.SetActive(true);
+        characterTownAI.isActive = false;
+
+        Debug.Log("ComissionItem completed.");
     }
 }

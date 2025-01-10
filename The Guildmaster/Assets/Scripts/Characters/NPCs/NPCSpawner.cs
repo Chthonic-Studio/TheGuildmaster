@@ -107,9 +107,54 @@ public class NPCSpawner
             return;
         }
 
+        // Assign a store to the NPC if needed
+        AssignStoreToNPC(npcManager, npcProfile);
+
         // You can add more code here to spawn the NPC based on the gender, race, name, and occupation.
     }
 
+    private static void AssignStoreToNPC(NPCManager npcManager, NPCProfile npcProfile)
+    {
+        Store[] stores = GameObject.FindObjectsOfType<Store>();
+        foreach (Store store in stores)
+        {
+            if (store.owner == null && DoesStoreTypeMatchOccupation(store.storeType, npcProfile.Occupation))
+            {
+                store.InitializeStore(npcProfile, store.storeType);
+                return;
+            }
+        }
+
+        // If no available stores found, assign an unassigned store
+        foreach (Store store in stores)
+        {
+            if (store.owner == null)
+            {
+                store.InitializeStore(npcProfile, store.storeType);
+                return;
+            }
+        }
+    }
+
+    private static bool DoesStoreTypeMatchOccupation(Store.StoreType storeType, NPCProfile.occupationType occupation)
+    {
+        // Example logic to match store type with NPC occupation
+        switch (storeType)
+        {
+            case Store.StoreType.Blacksmith:
+                return occupation == NPCProfile.occupationType.Blacksmith;
+            case Store.StoreType.Alchemist:
+                return occupation == NPCProfile.occupationType.Alchemist;
+            case Store.StoreType.Food:
+                return occupation == NPCProfile.occupationType.Baker ||
+                       occupation == NPCProfile.occupationType.Cook;
+            case Store.StoreType.Clothing:
+                return occupation == NPCProfile.occupationType.Tailor ||
+                       occupation == NPCProfile.occupationType.Weaver;
+            default:
+                return true;
+        }
+    }
 
 
 }
